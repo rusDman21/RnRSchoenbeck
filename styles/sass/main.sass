@@ -1,28 +1,4 @@
-//! normalize.css v2.1.1 | MIT License | git.io/normalize
-
-// HTML5 display definitions
-
-// Correct `block` display not defined in IE 8/9.
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary
-  display: block
-
-// Correct `inline-block` display not defined in IE 8/9.
-audio, canvas, video
-  display: inline-block
-
-audio:not([controls])
-  // Prevent modern browsers from displaying `audio` without controls.
-  display: none
-
-  // Remove excess height in iOS 5 devices.
-  height: 0
-
-// Address styling not present in IE 8/9.
-[hidden]
-  display: none
-
-
-// Base
+// ~~~~~~~~~~BASE~~~~~~~~~~
 
 html
   // Prevent system color scheme's background color being used in Firefox, IE, and Opera.
@@ -57,103 +33,17 @@ body
 
 // ~~~~~~~~~~CLEARFIX~~~~~~~~~~
 
-.group:before,
-.group:after
-  content: ""
-  display: table
-
-.group:after
-  clear: both
-
 .group
   *zoom: 1
+  &:before,
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
 
 
-// Links
-
-a
-  // Address `outline` inconsistency between Chrome and other browsers.
-  &:focus
-    outline: thin dotted
-
-  // Improve readability when focused and also mouse hovered in all browsers.
-  &:active, &:hover
-    outline: 0
-
-
-// Typography
-
-// Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari 5, and Chrome.
-h1
-  font-size: 2em
-  margin: 0.67em 0
-
-// Address styling not present in IE 8/9, Safari 5, and Chrome.
-abbr[title]
-  border-bottom: 1px dotted
-
-// Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
-b, strong
-  font-weight: bold
-
-// Address styling not present in Safari 5 and Chrome.
-dfn
-  font-style: italic
-
-// Address differences between Firefox and other browsers.
-hr
-  -moz-box-sizing: content-box
-  box-sizing: content-box
-  height: 0
-
-// Address styling not present in IE 8/9.
-mark
-  background: #ff0
-  color: #000
-
-// Correct font family set oddly in Safari 5 and Chrome.
-code, kbd, pre, samp
-  font-family: monospace, serif
-  font-size: 1em
-
-// Improve readability of pre-formatted text in all browsers.
-pre
-  white-space: pre-wrap
-
-// Set consistent quote types.
-q
-  quotes: '\201C' '\201D' '\2018' '\2019'
-
-// Address inconsistent and variable font size in all browsers.
-small
-  font-size: 80%
-
-// Prevent `sub` and `sup` affecting `line-height` in all browsers.
-sub, sup
-  font-size: 75%
-  line-height: 0
-  position: relative
-  vertical-align: baseline
-
-sup
-  top: -0.5em
-
-sub
-  bottom: -0.25em
-
-
-// ~~~~~~~~~~LISTS~~~~~~~~~~
-
-ul, ol, li
-  list-style: none
-  padding: 0
-  margin: 0
-
-ul
-  color: red
-
-
-// Embedded content
+// ~~~~~~~~~~EMBEDDED CONTENT~~~~~~~~~~
 
 // Remove border when inside `a` element in IE 8/9.
 img
@@ -164,14 +54,14 @@ svg:not(:root)
   overflow: hidden
 
 
-// Figures
+// ~~~~~~~~~~FIGURES~~~~~~~~~~
 
 // Address margin not present in IE 8/9 and Safari 5.
 figure
   margin: 0
 
 
-// Forms
+// ~~~~~~~~~~FORMS~~~~~~~~~~
 
 // Define consistent border, margin, and padding.
 fieldset
@@ -253,9 +143,116 @@ textarea
   vertical-align: top
 
 
-// Tables
+// ~~~~~~~~~~HTML5~~~~~~~~~~
+
+// Correct `block` display not defined in IE 8/9.
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary
+  display: block
+
+// Correct `inline-block` display not defined in IE 8/9.
+audio, canvas, video
+  display: inline-block
+
+audio:not([controls])
+  // Prevent modern browsers from displaying `audio` without controls.
+  display: none
+
+  // Remove excess height in iOS 5 devices.
+  height: 0
+
+// Address styling not present in IE 8/9.
+[hidden]
+  display: none
+
+
+// ~~~~~~~~~~LINKS~~~~~~~~~~
+
+a
+  // Address `outline` inconsistency between Chrome and other browsers.
+  &:focus
+    outline: thin dotted
+
+  // Improve readability when focused and also mouse hovered in all browsers.
+  &:active, &:hover
+    outline: 0
+
+
+// ~~~~~~~~~~LISTS~~~~~~~~~~
+
+ul, ol, li
+  list-style: none
+  padding: 0
+  margin: 0
+
+
+// ~~~~~~~~~~TABLES~~~~~~~~~~
 
 // Remove most spacing between table cells.
 table
   border-collapse: collapse
   border-spacing: 0
+
+
+// ~~~~~~~~~~TYPOGRAPHY~~~~~~~~~~
+
+// Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari 5, and Chrome.
+h1
+  font-size: 2em
+  margin: 0.67em 0
+
+// Address styling not present in IE 8/9, Safari 5, and Chrome.
+abbr[title]
+  border-bottom: 1px dotted
+
+// Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+b, strong
+  font-weight: bold
+
+// Address styling not present in Safari 5 and Chrome.
+dfn
+  font-style: italic
+
+// Address differences between Firefox and other browsers.
+hr
+  -moz-box-sizing: content-box
+  box-sizing: content-box
+  height: 0
+
+// Address styling not present in IE 8/9.
+mark
+  background: #ff0
+  color: #000
+
+// Correct font family set oddly in Safari 5 and Chrome.
+code, kbd, pre, samp
+  font-family: monospace, serif
+  font-size: 1em
+
+// Improve readability of pre-formatted text in all browsers.
+pre
+  white-space: pre-wrap
+
+// Set consistent quote types.
+q
+  quotes: '\201C' '\201D' '\2018' '\2019'
+
+// Address inconsistent and variable font size in all browsers.
+small
+  font-size: 80%
+
+// Prevent `sub` and `sup` affecting `line-height` in all browsers.
+sub, sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+
+sup
+  top: -0.5em
+
+sub
+  bottom: -0.25em
+
+
+
+//! normalize.css v2.1.1 | MIT License | git.io/normalize
