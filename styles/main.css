@@ -6,8 +6,12 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
-  margin: 0;
-  background: #000032; }
+  margin: 0; }
+
+.container {
+  background: #141464;
+  background: linear-gradient(to bottom, #141464 12%, white 80%), linear-gradient(darkgreen, darkgreen);
+  padding-top: 60px; }
 
 .name {
   background: white;
@@ -16,7 +20,7 @@ body {
   width: 400px; }
 
 .main {
-  background: #c8c8ff;
+  background: white;
   height: 600px;
   margin: 0 auto;
   width: 800px; }
