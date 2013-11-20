@@ -17,56 +17,48 @@ html
 // Remove default margin.
 body
   margin: 0
+  
 
 .container
-  background: rgb(20, 20, 100)
-  background: linear-gradient(to bottom, rgba(20, 20, 100, 1) 12%, rgba(255, 255, 255, 1) 80%), linear-gradient(rgba(0, 100, 0, 1), rgba(0, 100, 0, 1))
+  // background: rgb(0, 0, 100)
+  background: linear-gradient(to bottom, rgba(0, 0, 80, .8) 5%, rgba(255, 255, 255, 1) 50%), url('../img/wetsnow.png')
+  // background: linear-gradient(to bottom, rgba(0, 0, 80, .8) 10%, rgba(255, 255, 255, .1) 60%)
   padding-top: 60px
 
-  // &:after
-  //   content: ""
-  //   // background: url(image.jpg)
-  //   // opacity: 0.4
-  //   background: red
-  //   top: 0
-  //   left: 0
-  //   bottom: 0
-  //   right: 0
-  //   position: absolute 
-  //   z-index: -1
-
-
-
-// div
-//   width: 200px
-//   height: 200px
-//   display: block
-//   position: relative
-
-// div::after
-//   content: ""
-//   background: url(image.jpg)
-//   opacity: 0.5
-//   top: 0
-//   left: 0
-//   bottom: 0
-//   right: 0
-//   position: absolute
-//   z-index: -1
-
-
-
-.name
+header
   background: rgb(255, 255, 255)
-  height: 200px
+  background: url('../img/freshsnow.png')
   margin: 0 auto
   width: 400px
+  a
+    display: block
+    height: 120px
+    padding-top: 50px
+    // margin-bottom: -1px
+  h1, h2
+    margin: 10px 0
+    text-align: center
 
 .main
   background: rgb(255, 255, 255)
-  height: 600px
+  background: linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(255, 255, 255, 1)),url('../img/freshsnow.png')
+  border-top: 1px solid rgb(0, 0, 100)
+  height: 800px
   margin: 0 auto
   width: 800px
+
+header, .main
+  border-radius: 5px 5px 0 0
+
+.offset
+  border: 1px solid rgb(0, 0, 100)
+  border-bottom-color: transparent
+  box-shadow: 0 -1px 50px 0 rgba(0, 0, 100, .5)
+
+footer
+  background: url('../img/drawmount.png') bottom center no-repeat
+  background-size: 100% auto
+  height: 600px
 
 
 // ~~~~~~~~~~CLEARFIX~~~~~~~~~~
@@ -206,6 +198,7 @@ audio:not([controls])
 // ~~~~~~~~~~LINKS~~~~~~~~~~
 
 a
+  text-decoration: none
   // Address `outline` inconsistency between Chrome and other browsers.
   &:focus
     outline: thin dotted
@@ -292,4 +285,5 @@ sub
   bottom: -0.25em
 
 
+// www.subtlepatterns.com | edited Light Gray Floral Motif | http://www.graphicswall.com/
 //! normalize.css v2.1.1 | MIT License | git.io/normalize
