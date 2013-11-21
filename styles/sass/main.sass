@@ -1,7 +1,9 @@
 // ~~~~~~~~~~BASE~~~~~~~~~~
 
-$blue: rgba(0, 0, 100, 1)
+$blue: rgba(5, 10, 50, 1)
 $white: rgba(255, 255, 255, 1)
+$bkgrnd-lt: url('../img/feathers.png')
+$bkgrnd-dk: url('../img/scales.png')
 
 html
   // Prevent system color scheme's background color being used in Firefox, IE, and Opera.
@@ -20,11 +22,11 @@ html
 // Remove default margin.
 body
   margin: 0
-  
+   
 
 .container
   background: $blue
-  background: linear-gradient(to bottom, fade-out($blue, .2) 5%, $white 50%), url('../img/wetsnow.png')
+  background: linear-gradient(to bottom, fade-out($blue, 0) 2%, fade-out($blue, .2) 12%, $white 50%), $bkgrnd-dk
   padding-top: 60px
 
 header
@@ -34,7 +36,7 @@ header
   width: 50%
   a
     background: $white
-    background: url('../img/freshsnow.png'), linear-gradient(to bottom, $white, $white)
+    background: $bkgrnd-lt, linear-gradient(to bottom, $white, $white)
     border: 1px solid $blue
     border-bottom-color: transparent
     border-radius: 30px 30px 0 0
@@ -45,7 +47,7 @@ header
 
 .main
   background: $white
-  background: linear-gradient(to bottom, fade-out($white, .9), $white), url('../img/freshsnow.png')
+  background: linear-gradient(to bottom, fade-out($white, .9), $white), $bkgrnd-lt
   border-radius: 30px 30px 0 0
   border-top: 1px solid fade-out($blue, .8)
   box-shadow: 0 -10px 50px -25px fade-out($blue, 0)
@@ -56,7 +58,7 @@ header
 
 footer
   background: url('../img/drawmount.png') bottom center no-repeat
-  background-size: 90% auto
+  background-size: 98% auto
   height: 250px
 
 
