@@ -117,6 +117,7 @@ audio:not([controls]) {
   display: none; }
 
 a {
+  color: #000064;
   text-decoration: none; }
   a:focus {
     outline: thin dotted;
