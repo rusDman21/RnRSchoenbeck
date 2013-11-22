@@ -9,30 +9,29 @@ body {
   margin: 0; }
 
 .container {
-  background: #050a32;
-  background: linear-gradient(to bottom, #050a32 2%, rgba(5, 10, 50, 0.8) 12%, white 50%), url("../img/scales.png");
+  background: #04083c;
+  background: linear-gradient(to bottom, #04083c 2%, rgba(4, 8, 60, 0.8) 12%, white 50%), url("../img/scales.png");
   padding-top: 60px; }
 
 header {
   margin: 0 auto;
   max-width: 500px;
-  width: 50%; }
-  header a {
-    background: white;
-    background: url("../img/feathers.png"), linear-gradient(to bottom, white, white);
-    border: 1px solid #050a32;
-    border-bottom-color: transparent;
-    border-radius: 30px 30px 0 0;
-    box-shadow: 0 -1px 50px 0 rgba(5, 10, 50, 0.8);
-    display: block;
-    padding: 20px 0; }
+  width: 50%;
+  background: white;
+  background: url("../img/feathers.png"), linear-gradient(to bottom, white, white);
+  border: 1px solid #04083c;
+  border-bottom-color: transparent;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 4px -1px 30px 0 rgba(4, 8, 60, 0.8), inset 2px 8px 14px -2px white;
+  display: block;
+  padding: 20px 0; }
 
 .main {
   background: white;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), white), url("../img/feathers.png");
   border-radius: 30px 30px 0 0;
-  border-top: 1px solid rgba(5, 10, 50, 0.2);
-  box-shadow: 0 -10px 50px -25px #050a32;
+  border-top: 1px solid rgba(4, 8, 60, 0.2);
+  box-shadow: 10px -15px 50px -30px #04083c, inset 2px 8px 14px -2px white;
   height: 400px;
   margin: 0 auto;
   width: 80%; }
@@ -119,19 +118,19 @@ audio:not([controls]) {
   display: none; }
 
 a {
-  color: #050a32;
+  color: #04083c;
   text-decoration: none; }
   a:focus {
     outline: thin dotted;
-    color: rgba(5, 10, 50, 0.5); }
+    color: rgba(4, 8, 60, 0.5); }
   a:active, a:hover {
     outline: 0; }
   a:active {
-    color: rgba(5, 10, 50, 0.5); }
+    color: rgba(4, 8, 60, 0.5); }
   a:hover {
-    color: rgba(5, 10, 50, 0.7); }
+    color: rgba(4, 8, 60, 0.7); }
   a:visited {
-    color: #050a32; }
+    color: #04083c; }
 
 ul, ol, li {
   list-style: none;
@@ -200,3 +199,9 @@ small {
 
 header {
   font-family: "Riesling", cursive; }
+
+.press-heavy {
+  text-shadow: 1px 1px 0px white, -1px -1px 1px rgba(4, 8, 60, 0.4); }
+
+.press-light {
+  text-shadow: 1px 1px 0px white; }
