@@ -6,11 +6,12 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
+  color: #04083c;
   margin: 0; }
 
 .container {
   background: #04083c;
-  background: linear-gradient(to bottom, #04083c 2%, rgba(4, 8, 60, 0.8) 12%, white 50%), url("../img/scalesdrk.png");
+  background: linear-gradient(to bottom, #04083c 2%, rgba(4, 8, 60, 0.8) 6%, rgba(4, 8, 60, 0.4) 10%, white 60%), url("../img/scalesdrk.png");
   padding-top: 60px; }
 
 header {
@@ -20,7 +21,6 @@ header {
   border-bottom-color: transparent;
   border-radius: 30px 30px 0 0;
   box-shadow: 4px -1px 30px 0 rgba(4, 8, 60, 0.8), inset 2px 8px 14px -2px white;
-  color: #04083c;
   display: block;
   padding: 1.5em 3%;
   margin: 0 auto;
@@ -32,8 +32,9 @@ header {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), white), url("../img/feathers.png");
   border-radius: 30px 30px 0 0;
   border-top: 1px solid rgba(4, 8, 60, 0.2);
-  box-shadow: 10px -15px 50px -30px #04083c, inset 2px 8px 14px -2px white;
+  box-shadow: 5px -25px 25px -30px #04083c, inset 2px 8px 14px -2px white;
   margin: 0 auto;
+  max-width: 1280px;
   padding: 5%;
   width: 75%; }
 
@@ -41,9 +42,6 @@ footer {
   background: url("../img/drawmount.png") bottom center no-repeat;
   background-size: 98% auto;
   height: 250px; }
-
-.hide {
-  display: none; }
 
 .nav li {
   float: left; }
@@ -197,7 +195,7 @@ small {
   font-size: 80%; }
 
 .press-heavy {
-  text-shadow: 1px 1px 2px white, -1px -1px 1px rgba(2, 5, 36, 0.8); }
+  text-shadow: 1px 1px 2px white, -1px -1px 1px rgba(2, 5, 36, 0.5); }
 
 .press-light {
   text-shadow: 1px 1px 1px white; }

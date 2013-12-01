@@ -1,7 +1,6 @@
 // ~~~~~~~~~~BASE~~~~~~~~~~
 
 $blue: rgba(4, 8, 60, 1)
-// $bluedark: rgba(4, 8, 60, 1)
 $white: rgba(255, 255, 255, 1)
 $bkgrnd-lt: url('../img/feathers.png')
 $bkgrnd-dk: url('../img/scalesdrk.png')
@@ -20,14 +19,14 @@ html
   -ms-text-size-adjust: 100%
   -webkit-text-size-adjust: 100%
 
-// Remove default margin.
-body
-  margin: 0
-   
 
+body
+  color: $blue
+  margin: 0  // Remove default margin.
+   
 .container
   background: $blue
-  background: linear-gradient(to bottom, fade-out($blue, 0) 2%, fade-out($blue, .2) 12%, $white 50%), $bkgrnd-dk
+  background: linear-gradient(to bottom, fade-out($blue, 0) 2%, fade-out($blue, .2) 6%, fade-out($blue, .6) 10%, $white 60%), $bkgrnd-dk
   padding-top: 60px
 
 header
@@ -37,7 +36,6 @@ header
   border-bottom-color: transparent
   border-radius: 30px 30px 0 0
   box-shadow: 4px -1px 30px 0 fade-out($blue, .2), inset 2px 8px 14px -2px $white
-  color: $blue
   display: block
   padding: 1.5em 3%
   margin: 0 auto
@@ -50,9 +48,9 @@ header
   background: linear-gradient(to bottom, fade-out($white, .9), $white), $bkgrnd-lt
   border-radius: 30px 30px 0 0
   border-top: 1px solid fade-out($blue, .8)
-  box-shadow: 10px -15px 50px -30px fade-out($blue, 0), inset 2px 8px 14px -2px $white
-  // height: 400px
+  box-shadow: 5px -25px 25px -30px fade-out($blue, 0), inset 2px 8px 14px -2px $white
   margin: 0 auto
+  max-width: 1280px
   // overflow: hidden
   padding: 5%
   width: 75%
@@ -61,9 +59,6 @@ footer
   background: url('../img/drawmount.png') bottom center no-repeat
   background-size: 98% auto
   height: 250px
-
-.hide
-  display: none
 
 
 // ~~~~~~~~~~NAVIGATION~~~~~~~~~~
@@ -304,7 +299,7 @@ small
   font-size: 80%
 
 .press-heavy
-  text-shadow: 1px 1px 2px $white, -1px -1px 1px fade-out(darken($blue, 5%), .2)
+  text-shadow: 1px 1px 2px $white, -1px -1px 1px fade-out(darken($blue, 5%), .5)
 
 .press-light
   text-shadow: 1px 1px 1px $white
