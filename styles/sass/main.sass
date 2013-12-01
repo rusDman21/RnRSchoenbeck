@@ -1,9 +1,10 @@
 // ~~~~~~~~~~BASE~~~~~~~~~~
 
 $blue: rgba(4, 8, 60, 1)
+// $bluedark: rgba(4, 8, 60, 1)
 $white: rgba(255, 255, 255, 1)
 $bkgrnd-lt: url('../img/feathers.png')
-$bkgrnd-dk: url('../img/scales.png')
+$bkgrnd-dk: url('../img/scalesdrk.png')
 
 html
   // Prevent system color scheme's background color being used in Firefox, IE, and Opera.
@@ -30,18 +31,19 @@ body
   padding-top: 60px
 
 header
-  margin: 0 auto
-  // margin-bottom: -1px
-  max-width: 500px
-  width: 50%
   background: $white
   background: $bkgrnd-lt, linear-gradient(to bottom, $white, $white)
   border: 1px solid $blue
   border-bottom-color: transparent
   border-radius: 30px 30px 0 0
   box-shadow: 4px -1px 30px 0 fade-out($blue, .2), inset 2px 8px 14px -2px $white
+  color: $blue
   display: block
-  padding: 20px 0
+  padding: 1.5em 3%
+  margin: 0 auto
+  // margin-bottom: -1px
+  max-width: 500px
+  width: 50%
 
 .main
   background: $white
@@ -52,7 +54,8 @@ header
   // height: 400px
   margin: 0 auto
   // overflow: hidden
-  width: 80%
+  padding: 5%
+  width: 75%
 
 footer
   background: url('../img/drawmount.png') bottom center no-repeat
@@ -209,9 +212,11 @@ audio:not([controls])
 a
   color: $blue
   text-decoration: none
+  
   // Address `outline` inconsistency between Chrome and other browsers.
   &:focus
     outline: thin dotted
+    color: lighten($blue, 40%)
     color: fade-out($blue, .5)
 
   // Improve readability when focused and also mouse hovered in all browsers.
@@ -219,13 +224,12 @@ a
     outline: 0
 
   &:active
-    color: fade-out($blue, .5)
+    color: lighten($blue, 30%)
+    color: fade-out($blue, .4)
 
   &:hover
+    color: lighten($blue, 20%)
     color: fade-out($blue, .3)
-
-  &:visited
-    color: fade-out($blue, 0)
 
 
 // ~~~~~~~~~~LISTS~~~~~~~~~~
@@ -250,7 +254,6 @@ table
   font-family: 'Riesling'
   src: url('../fonts/riesling.ttf')
 
-// Address variable `h1` margin within `section` and `article` contexts in Firefox 4+, Safari 5, and Chrome.
 h1
   font-size: 5em
 
@@ -267,38 +270,26 @@ h2, h3
   font-size: 2em
 
 h1, h2, h3
-  line-height: 1em
   margin: 0
   text-align: center
 
+h1, h2, h3, h4, h5, h6
+  line-height: 1em
 
-// Address styling not present in IE 8/9, Safari 5, and Chrome.
-abbr[title]
-  border-bottom: 1px dotted
+header
+  // font-family: 'Poiret One', cursive
+  // font-family: 'Rye', cursive
+  font-family: 'Riesling', cursive
 
 // Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
 b, strong
   font-weight: bold
-
-// Address styling not present in Safari 5 and Chrome.
-dfn
-  font-style: italic
 
 // Address differences between Firefox and other browsers.
 hr
   -moz-box-sizing: content-box
   box-sizing: content-box
   height: 0
-
-// Address styling not present in IE 8/9.
-mark
-  background: #ff0
-  color: #000
-
-// Correct font family set oddly in Safari 5 and Chrome.
-code, kbd, pre, samp
-  font-family: monospace, serif
-  font-size: 1em
 
 // Improve readability of pre-formatted text in all browsers.
 pre
@@ -312,16 +303,14 @@ q
 small
   font-size: 80%
 
-header
-  // font-family: 'Poiret One', cursive
-  // font-family: 'Rye', cursive
-  font-family: 'Riesling', cursive
-
 .press-heavy
-  text-shadow: 1px 1px 0px $white, -1px -1px 1px fade-out($blue, .6)
+  text-shadow: 1px 1px 2px $white, -1px -1px 1px fade-out(darken($blue, 5%), .2)
 
 .press-light
-  text-shadow: 1px 1px 0px $white
+  text-shadow: 1px 1px 1px $white
+
+
+
 
 // www.subtlepatterns.com | edited Light Gray Floral Motif | http://www.graphicswall.com/
 //! normalize.css v2.1.1 | MIT License | git.io/normalize
