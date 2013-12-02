@@ -5,13 +5,16 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
+a {
+  transition: all 0.25s ease-in-out; }
+
 body {
   color: #04083c;
   margin: 0; }
 
 .container {
   background: #04083c;
-  background: linear-gradient(to bottom, #04083c 2%, rgba(4, 8, 60, 0.8) 6%, rgba(4, 8, 60, 0.4) 10%, white 60%), url("../img/scalesdrk.png");
+  background: linear-gradient(to bottom, #04083c 2%, rgba(4, 8, 60, 0.8) 6%, rgba(4, 8, 60, 0.6) 12%, white 60%), url("../img/scalesdrk.png");
   padding-top: 60px; }
 
 header {
@@ -32,7 +35,7 @@ header {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), white), url("../img/feathers.png");
   border-radius: 30px 30px 0 0;
   border-top: 1px solid rgba(4, 8, 60, 0.2);
-  box-shadow: 5px -25px 25px -30px #04083c, inset 2px 8px 14px -2px white;
+  box-shadow: 0 -25px 30px -35px #04083c, inset 2px 8px 14px -2px white;
   margin: 0 auto;
   max-width: 1280px;
   padding: 5%;
@@ -41,7 +44,8 @@ header {
 footer {
   background: url("../img/drawmount.png") bottom center no-repeat;
   background-size: 98% auto;
-  height: 250px; }
+  height: 40%;
+  min-height: 250px; }
 
 .nav li {
   float: left; }
