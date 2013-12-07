@@ -47,8 +47,16 @@ footer {
   height: 40%;
   min-height: 250px; }
 
-.nav li {
-  float: left; }
+.nav {
+  padding-left: 0.1em; }
+  .nav li {
+    float: left; }
+    .nav li a {
+      padding-right: 0.1em; }
+    .nav li a:after {
+      content: " }"; }
+    .nav li a:before {
+      content: "{ "; }
 
 .group {
   *zoom: 1; }
@@ -155,7 +163,11 @@ table {
   font-family: "Riesling";
   src: url("../fonts/riesling.ttf"); }
 
-h1 {
+@font-face {
+  font-family: "Caslon Antique";
+  src: url("../fonts/caslon-antique.ttf"); }
+
+h1, h4 {
   font-size: 5em; }
 
 h2 {
@@ -178,6 +190,12 @@ h1, h2, h3 {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1em; }
 
+.nav, h4 {
+  font-family: "Caslon Antique"; }
+
+.nav {
+  font-size: 1.5em; }
+
 header {
   font-family: "Riesling", cursive; }
 
@@ -198,8 +216,8 @@ q {
 small {
   font-size: 80%; }
 
-.press-heavy {
+.press-heavy, h4 {
   text-shadow: 1px 1px 2px white, -1px -1px 1px rgba(2, 5, 36, 0.5); }
 
-.press-light {
+.press-light, .nav {
   text-shadow: 1px 1px 1px white; }

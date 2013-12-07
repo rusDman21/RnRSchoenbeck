@@ -66,9 +66,15 @@ footer
 // ~~~~~~~~~~NAVIGATION~~~~~~~~~~
 
 .nav
+  padding-left: .1em
   li
     float: left
-
+    & a
+      padding-right: .1em
+    & a:after
+      content: ' }'
+    & a:before
+      content: '{ '
 
 // ~~~~~~~~~~CLEARFIX~~~~~~~~~~
 
@@ -251,7 +257,11 @@ table
   font-family: 'Riesling'
   src: url('../fonts/riesling.ttf')
 
-h1
+@font-face  
+  font-family: "Caslon Antique"
+  src: url('../fonts/caslon-antique.ttf')
+
+h1, h4
   font-size: 5em
 
 h2
@@ -272,6 +282,12 @@ h1, h2, h3
 
 h1, h2, h3, h4, h5, h6
   line-height: 1em
+
+.nav, h4
+  font-family: "Caslon Antique"
+
+.nav
+  font-size: 1.5em
 
 header
   // font-family: 'Poiret One', cursive
@@ -300,10 +316,10 @@ q
 small
   font-size: 80%
 
-.press-heavy
+.press-heavy, h4
   text-shadow: 1px 1px 2px $white, -1px -1px 1px fade-out(darken($blue, 5%), .5)
 
-.press-light
+.press-light, .nav
   text-shadow: 1px 1px 1px $white
 
 
