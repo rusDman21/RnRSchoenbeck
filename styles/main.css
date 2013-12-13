@@ -48,14 +48,17 @@ footer {
   min-height: 250px; }
 
 .nav {
-  padding-left: 0.1em; }
+  padding-left: 0.1em;
+  margin-bottom: 4em; }
   .nav li {
     float: left; }
     .nav li a {
       padding-right: 0.1em; }
     .nav li a:after {
+      color: #5a0014;
       content: " }"; }
     .nav li a:before {
+      color: #5a0014;
       content: "{ "; }
 
 .group {
@@ -167,7 +170,7 @@ table {
   font-family: "Caslon Antique";
   src: url("../fonts/caslon-antique.ttf"); }
 
-h1, h4 {
+h1 {
   font-size: 5em; }
 
 h2 {
@@ -177,7 +180,16 @@ h2 {
 h3 {
   font-weight: 400; }
 
-h1, h2 {
+h4 {
+  color: #5a0014;
+  font-size: 3.5em;
+  text-align: center; }
+
+h5 {
+  color: #5a0014;
+  font-size: 2.8em; }
+
+h1, h2, h5 {
   font-weight: 600; }
 
 h2, h3 {
@@ -190,13 +202,16 @@ h1, h2, h3 {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1em; }
 
+h4, h5, h6 {
+  margin: 0.5em 0 0 0; }
+
 .nav, h4 {
   font-family: "Caslon Antique"; }
 
 .nav {
   font-size: 1.5em; }
 
-header {
+header, h5 {
   font-family: "Riesling", cursive; }
 
 b, strong {
