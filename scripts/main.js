@@ -79,5 +79,31 @@
 		});
 
 	}
-// Forked from Smooth Scroll 2.7 (http://cferdinandi.github.io/smooth-scroll/)
 })();
+// Forked from Smooth Scroll 2.7 (http://cferdinandi.github.io/smooth-scroll/)
+
+
+(function($){
+
+  var line_height = 24;
+
+  var line_height_offset = (line_height - 1) + 'px';
+  line_height = line_height + 'px';
+
+  var jQueryGridContainerCss = {
+    backgroundImage: 'linear-gradient(transparent ' + line_height_offset + ', rgba(255, 0, 0, .6) ' + line_height_offset + ', rgba(255, 0, 0, .6) ' + line_height + ')',
+    backgroundSize: line_height + ' ' + line_height
+  };
+
+  $(function(){
+    $('.jquery-grid-container').css(jQueryGridContainerCss);
+    var $jQueryGrid = $('.jquery-grid');
+    $(document).on('keydown', function(event) {
+      if (event.which === 27) {
+        event.preventDefault();
+        $jQueryGrid.toggle();
+      }
+    });
+  });
+}).call(this, jQuery);
+// Forked from Shay Howe https://github.com/shayhowe/jquery-grid-overlay

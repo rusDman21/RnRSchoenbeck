@@ -26,6 +26,7 @@ a
 body
   color: $blue
   margin: 0  // Remove default margin.
+  text-align: center
    
 .container
   background: $blue
@@ -42,7 +43,6 @@ header
   display: block
   padding: 1.5em 3%
   margin: 0 auto
-  // margin-bottom: -1px
   max-width: 500px
   width: 50%
 
@@ -54,9 +54,14 @@ header
   box-shadow: 0 -25px 30px -35px fade-out($blue, 0), inset 2px 8px 14px -2px $white
   margin: 0 auto
   max-width: 1280px
-  // overflow: hidden
   padding: 5%
   width: 75%
+
+section
+  max-width: 800px
+  // background-color: pink
+  margin: 0 auto
+  width: 80%
 
 footer
   background: url('../img/drawmount.png') bottom center no-repeat
@@ -192,6 +197,33 @@ textarea
   vertical-align: top
 
 
+// ~~~~~~~~~~GRID~~~~~~~~~~
+
+.grid-container
+  margin: 0 auto
+  max-width: 1280px
+
+.col-1-4
+  float: left
+  margin: 0 1.041666667%
+  width: 22.916666667%
+
+.jquery-grid
+  display: none
+  height: 2000%
+  position: absolute
+  top: 0
+  width: 100%
+  z-index: 9999
+
+.jquery-grid-container,
+.jquery-grid-col
+  height: 100%
+
+.jquery-grid-col 
+  background-color: rgba(255, 0, 0, .2)
+
+
 // ~~~~~~~~~~HTML5~~~~~~~~~~
 
 // Correct `block` display not defined in IE 8/9.
@@ -241,10 +273,14 @@ a
 
 // ~~~~~~~~~~LISTS~~~~~~~~~~
 
-ul, ol, li
+ul, ol
   list-style: none
   padding: 0
   margin: 0
+
+section li
+  text-align: left
+  margin-left: 20%
 
 
 // ~~~~~~~~~~TABLES~~~~~~~~~~
@@ -269,53 +305,44 @@ table
   font-family: "Treasury Platinum"
   src: url('../fonts/treasury-platinum.ttf')
 
+body
+  font-family: "Caslon Antique"
+
+header, h4
+  font-family: 'Treasury Platinum', cursive
+
+h2, h3, h5
+  font-family: 'Riesling', cursive
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 400
+
 h1
   font-size: 4em
-
-h2
-  position: relative
-  left: -40px
-h3
-  font-weight: 400
 
 h4
   color: $red
   font-size: 3.5em
-  text-align: center
 
 h5
   color: $red
   font-size: 2.8em
 
-h1, h2, h5
-  font-weight: 600
+.nav
+  font-size: 1.5em
 
 h2, h3
   font-size: 2em
-  font-family: 'Riesling', cursive
 
 h1, h2, h3
   margin: 0
-  text-align: center
-
-h1, h2, h3, h4, h5, h6
-  //line-height: 1em
-  font-weight: 400
 
 h4, h5, h6
   margin: .5em 0 0 0 
 
-.nav, h4
-  font-family: "Caslon Antique"
 
-.nav
-  font-size: 1.5em
 
-header, h5
-  // font-family: 'Poiret One', cursive
-  // font-family: 'Rye', cursive
-  //font-family: 'Riesling', cursive
-  font-family: 'Treasury Platinum', cursive
+
 
 // Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
 b, strong

@@ -10,7 +10,8 @@ a {
 
 body {
   color: #04083c;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
 
 .container {
   background: #04083c;
@@ -40,6 +41,11 @@ header {
   max-width: 1280px;
   padding: 5%;
   width: 75%; }
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 80%; }
 
 footer {
   background: url("../img/drawmount.png") bottom center no-repeat;
@@ -124,6 +130,30 @@ textarea {
   overflow: auto;
   vertical-align: top; }
 
+.grid-container {
+  margin: 0 auto;
+  max-width: 1280px; }
+
+.col-1-4 {
+  float: left;
+  margin: 0 1.04167%;
+  width: 22.91667%; }
+
+.jquery-grid {
+  display: none;
+  height: 2000%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+
+.jquery-grid-container,
+.jquery-grid-col {
+  height: 100%; }
+
+.jquery-grid-col {
+  background-color: rgba(255, 0, 0, 0.2); }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
 
@@ -153,10 +183,14 @@ a {
     color: #0a159c;
     color: rgba(4, 8, 60, 0.7); }
 
-ul, ol, li {
+ul, ol {
   list-style: none;
   padding: 0;
   margin: 0; }
+
+section li {
+  text-align: left;
+  margin-left: 20%; }
 
 table {
   border-collapse: collapse;
@@ -174,50 +208,40 @@ table {
   font-family: "Treasury Platinum";
   src: url("../fonts/treasury-platinum.ttf"); }
 
+body {
+  font-family: "Caslon Antique"; }
+
+header, h4 {
+  font-family: "Treasury Platinum", cursive; }
+
+h2, h3, h5 {
+  font-family: "Riesling", cursive; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
 h1 {
   font-size: 4em; }
 
-h2 {
-  position: relative;
-  left: -40px; }
-
-h3 {
-  font-weight: 400; }
-
 h4 {
   color: #5a0014;
-  font-size: 3.5em;
-  text-align: center; }
+  font-size: 3.5em; }
 
 h5 {
   color: #5a0014;
   font-size: 2.8em; }
 
-h1, h2, h5 {
-  font-weight: 600; }
-
-h2, h3 {
-  font-size: 2em;
-  font-family: "Riesling", cursive; }
-
-h1, h2, h3 {
-  margin: 0;
-  text-align: center; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
-
-h4, h5, h6 {
-  margin: 0.5em 0 0 0; }
-
-.nav, h4 {
-  font-family: "Caslon Antique"; }
-
 .nav {
   font-size: 1.5em; }
 
-header, h5 {
-  font-family: "Treasury Platinum", cursive; }
+h2, h3 {
+  font-size: 2em; }
+
+h1, h2, h3 {
+  margin: 0; }
+
+h4, h5, h6 {
+  margin: 0.5em 0 0 0; }
 
 b, strong {
   font-weight: bold; }
