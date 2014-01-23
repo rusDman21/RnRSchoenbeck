@@ -3,7 +3,9 @@ html {
   color: black;
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  line-height: 1.5; }
 
 a {
   transition: all 0.25s ease-in-out; }
@@ -54,12 +56,12 @@ footer {
   min-height: 250px; }
 
 .nav {
-  padding-left: 0.1em;
-  margin-bottom: 4em; }
+  display: inline-block;
+  padding-left: 1%;
+  margin-bottom: 3em; }
   .nav li {
-    float: left; }
-    .nav li a {
-      padding-right: 0.1em; }
+    float: left;
+    padding-right: 1%; }
     .nav li a:after {
       color: #5a0014;
       content: " }"; }
@@ -80,6 +82,11 @@ img {
 
 svg:not(:root) {
   overflow: hidden; }
+
+.hr {
+  border-bottom: dotted 2px rgba(4, 8, 60, 0.5);
+  display: inline-block;
+  padding-bottom: 0.2em; }
 
 figure {
   margin: 0; }
@@ -221,21 +228,24 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 h1 {
-  font-size: 4em; }
+  font-size: 6.3em; }
+
+h2, h3 {
+  font-size: 3.75em; }
 
 h4 {
   color: #5a0014;
-  font-size: 3.5em; }
+  font-size: 5.25em; }
 
 h5 {
   color: #5a0014;
-  font-size: 2.8em; }
+  font-size: 4.2em; }
 
 .nav {
-  font-size: 1.5em; }
+  font-size: 2.7em; }
 
-h2, h3 {
-  font-size: 2em; }
+section li, section p {
+  font-size: 2.25em; }
 
 h1, h2, h3 {
   margin: 0; }

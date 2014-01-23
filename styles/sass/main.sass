@@ -5,6 +5,11 @@ $white: rgba(255, 255, 255, 1)
 $red: rgba(90, 0, 20, 1)
 $bkgrnd-lt: url('../img/feathers.png')
 $bkgrnd-dk: url('../img/scalesdrk.png')
+$press-hvy: 1px 1px 2px $white, -1px -1px 1px fade-out(darken($blue, 5%), .5)
+$press-lt: 1px 1px 1px $white
+$base-size: 3em
+// $base-height: $base-size*.5
+
 
 html
   // Prevent system color scheme's background color being used in Firefox, IE, and Opera.
@@ -19,6 +24,9 @@ html
   // Prevent iOS text size adjust after orientation change, without disabling user zoom.
   -ms-text-size-adjust: 100%
   -webkit-text-size-adjust: 100%
+
+  font-size: 62.5%
+  line-height: 1.5
 
 a
   transition: all .25s ease-in-out
@@ -72,12 +80,12 @@ footer
 // ~~~~~~~~~~NAVIGATION~~~~~~~~~~
 
 .nav
-  padding-left: .1em
-  margin-bottom: 4em
+  display: inline-block
+  padding-left: 1%
+  margin-bottom: 3em
   li
     float: left
-    & a
-      padding-right: .1em
+    padding-right: 1%
     & a:after
       color: $red
       content: ' }'
@@ -106,6 +114,11 @@ img
 // Correct overflow displayed oddly in IE 9.
 svg:not(:root)
   overflow: hidden
+
+.hr
+  border-bottom: dotted 2px fade-out($blue, .5)
+  display: inline-block
+  padding-bottom: .2em
 
 
 // ~~~~~~~~~~FIGURES~~~~~~~~~~
@@ -318,21 +331,26 @@ h1, h2, h3, h4, h5, h6
   font-weight: 400
 
 h1
-  font-size: 4em
+  font-size: $base-size*2.1
+  // line-height: $base-height
+
+h2, h3
+  font-size: $base-size*1.25
 
 h4
   color: $red
-  font-size: 3.5em
+  font-size: $base-size*1.75
 
 h5
   color: $red
-  font-size: 2.8em
+  font-size: $base-size*1.4
 
 .nav
-  font-size: 1.5em
+  font-size: $base-size*.9
 
-h2, h3
-  font-size: 2em
+section
+  li, p
+    font-size: $base-size*.75
 
 h1, h2, h3
   margin: 0
@@ -367,10 +385,10 @@ small
   font-size: 80%
 
 .press-heavy, h4
-  text-shadow: 1px 1px 2px $white, -1px -1px 1px fade-out(darken($blue, 5%), .5)
+  text-shadow: $press-hvy
 
 .press-light, .nav
-  text-shadow: 1px 1px 1px $white
+  text-shadow: $press-lt
 
 
 
