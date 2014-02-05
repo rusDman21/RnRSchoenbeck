@@ -50,9 +50,9 @@ section {
   width: 80%; }
 
 footer {
-  background: url("../img/drawmount.png") bottom center no-repeat;
-  background-size: 98% auto;
-  height: 40%;
+  background: url("../img/mountain.png") bottom center no-repeat;
+  background-size: 40% auto;
+  height: 20%;
   min-height: 250px; }
 
 .nav {
@@ -63,10 +63,10 @@ footer {
     float: left;
     padding-right: 1%; }
     .nav li a:after {
-      color: #5a0014;
+      color: #04083c;
       content: " }"; }
     .nav li a:before {
-      color: #5a0014;
+      color: #04083c;
       content: "{ "; }
 
 .group {
@@ -215,30 +215,36 @@ table {
   font-family: "Treasury Platinum";
   src: url("../fonts/treasury-platinum.ttf"); }
 
+@font-face {
+  font-family: "Edwardian Script";
+  src: url("../fonts/edwardian-script.ttf"); }
+
+@font-face {
+  font-family: "Champagne Limousines";
+  src: url("../fonts/champagne-limousines.ttf"); }
+
 body {
-  font-family: "Caslon Antique"; }
+  font-family: "Champagne Limousines"; }
 
 header, h4 {
-  font-family: "Treasury Platinum", cursive; }
+  font-family: "Edwardian Script", cursive; }
 
 h2, h3, h5 {
-  font-family: "Riesling", cursive; }
+  font-family: "Champagne Limousines", cursive; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 h1 {
-  font-size: 6.3em; }
+  font-size: 9em; }
 
 h2, h3 {
-  font-size: 3.75em; }
+  font-size: 3em; }
 
 h4 {
-  color: #5a0014;
-  font-size: 5.25em; }
+  font-size: 6.75em; }
 
 h5 {
-  color: #5a0014;
   font-size: 4.2em; }
 
 h6, .nav {
@@ -247,7 +253,10 @@ h6, .nav {
 section li, section p {
   font-size: 2.25em; }
 
-h1, h2, h3 {
+h1 {
+  margin: 0 0 -20px; }
+
+h2, h3 {
   margin: 0; }
 
 h4, h5, h6 {

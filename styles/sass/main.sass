@@ -81,9 +81,9 @@ section
   width: 80%
 
 footer
-  background: url('../img/drawmount.png') bottom center no-repeat
-  background-size: 98% auto
-  height: 40%
+  background: url('../img/mountain.png') bottom center no-repeat
+  background-size: 40% auto
+  height: 20%
   min-height: 250px
 
 // ~~~~~~~~~~NAVIGATION~~~~~~~~~~
@@ -96,10 +96,10 @@ footer
     float: left
     padding-right: 1%
     & a:after
-      color: $red
+      color: $blue
       content: ' }'
     & a:before
-      color: $red
+      color: $blue
       content: '{ '
 
 // ~~~~~~~~~~CLEARFIX~~~~~~~~~~
@@ -366,30 +366,37 @@ table
   font-family: "Treasury Platinum"
   src: url('../fonts/treasury-platinum.ttf')
 
+@font-face  
+  font-family: "Edwardian Script"
+  src: url('../fonts/edwardian-script.ttf')
+
+@font-face  
+  font-family: "Champagne Limousines"
+  src: url('../fonts/champagne-limousines.ttf')
+
 body
-  font-family: "Caslon Antique"
+  font-family: "Champagne Limousines"
 
 header, h4
-  font-family: 'Treasury Platinum', cursive
+  font-family: 'Edwardian Script', cursive
+
 
 h2, h3, h5
-  font-family: 'Riesling', cursive
+  font-family: 'Champagne Limousines', cursive
 
 h1, h2, h3, h4, h5, h6
   font-weight: 400
 
 h1
-  font-size: $base-size * 2.1
+  font-size: $base-size * 3
 
 h2, h3
-  font-size: $base-size * 1.25
+  font-size: $base-size * 1
 
 h4
-  color: $red
-  font-size: $base-size * 1.75
+  font-size: $base-size * 2.25
 
 h5
-  color: $red
   font-size: $base-size * 1.4
 
 h6, .nav
@@ -399,7 +406,10 @@ section
   li, p
     font-size: $base-size * .75
 
-h1, h2, h3
+h1
+  margin: 0 0 -20px
+
+h2, h3
   margin: 0
 
 h4, h5, h6
