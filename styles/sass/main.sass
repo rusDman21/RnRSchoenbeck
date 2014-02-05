@@ -8,7 +8,15 @@ $bkgrnd-dk: url('../img/scalesdrk.png')
 $press-hvy: 1px 1px 2px $white, -1px -1px 1px fade-out(darken($blue, 5%), .5)
 $press-lt: 1px 1px 1px $white
 $base-size: 3em
-// $base-height: $base-size*.5
+
+$max-width: 1000
+$columns: 4
+
+$col-width: $max-width * .75
+$gutter-width: $col-width / 3
+
+
+
 
 
 html
@@ -35,7 +43,8 @@ body
   color: $blue
   margin: 0  // Remove default margin.
   text-align: center
-   
+  
+
 .container
   background: $blue
   background: linear-gradient(to bottom, fade-out($blue, 0) 2%, fade-out($blue, .2) 6%, fade-out($blue, .4) 12%, $white 60%), $bkgrnd-dk
@@ -61,7 +70,7 @@ header
   border-top: 1px solid fade-out($blue, .8)
   box-shadow: 0 -25px 30px -35px fade-out($blue, 0), inset 2px 8px 14px -2px $white
   margin: 0 auto
-  max-width: 1280px
+  max-width: $max-width + px
   padding: 5%
   width: 75%
 
@@ -221,6 +230,10 @@ textarea
   margin: 0 1.041666667%
   width: 22.916666667%
 
+
+
+// use variables above to get .col-1-12 in terms of percenteg for width and margin
+
 .jquery-grid
   display: none
   height: 2000%
@@ -237,8 +250,43 @@ textarea
   background-color: rgba(255, 0, 0, .2)
 
 
-// ~~~~~~~~~~HTML5~~~~~~~~~~
 
+
+// $gutter: 20
+
+// .container
+//   margin: 0 auto
+//   max-width: $max-width + px
+
+// .col-1-4,
+// .col-1-2,
+// .col-3-4
+//   margin-left: ($gutter/$max-width)*100%
+//   margin-right: ($gutter/$max-width)*100%
+
+// .col-gutters
+//   padding-left:  ($gutter/$max-width) * 100%
+//   padding-right: ($gutter/$max-width) * 100%
+
+// .col-gutters-full
+//   padding-left:  (($gutter * 2) /$max-width) * 100%
+//   padding-right: (($gutter * 2) /$max-width) * 100%
+
+// .col-baselines
+//   padding-bottom: 2.4em
+//   padding-top: 2.4em
+
+// @mixin col-width($column-span)
+// width: (((($max-width / $columns) * $column-span) - ($gutter * 2)) / $max-width) * 100%
+
+
+
+
+
+
+
+// ~~~~~~~~~~HTML5~~~~~~~~~~
+s
 // Correct `block` display not defined in IE 8/9.
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary
   display: block
@@ -331,36 +379,31 @@ h1, h2, h3, h4, h5, h6
   font-weight: 400
 
 h1
-  font-size: $base-size*2.1
-  // line-height: $base-height
+  font-size: $base-size * 2.1
 
 h2, h3
-  font-size: $base-size*1.25
+  font-size: $base-size * 1.25
 
 h4
   color: $red
-  font-size: $base-size*1.75
+  font-size: $base-size * 1.75
 
 h5
   color: $red
-  font-size: $base-size*1.4
+  font-size: $base-size * 1.4
 
-.nav
-  font-size: $base-size*.9
+h6, .nav
+  font-size: $base-size * .9
 
 section
   li, p
-    font-size: $base-size*.75
+    font-size: $base-size * .75
 
 h1, h2, h3
   margin: 0
 
 h4, h5, h6
   margin: .5em 0 0 0 
-
-
-
-
 
 // Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
 b, strong
@@ -379,10 +422,6 @@ pre
 // Set consistent quote types.
 q
   quotes: '\201C' '\201D' '\2018' '\2019'
-
-// Address inconsistent and variable font size in all browsers.
-small
-  font-size: 80%
 
 .press-heavy, h4
   text-shadow: $press-hvy
