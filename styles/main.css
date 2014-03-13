@@ -55,6 +55,11 @@ footer {
   height: 20%;
   min-height: 250px; }
 
+.activity {
+  float: left;
+  height: 350px;
+  width: 33.33333%; }
+
 .nav {
   display: inline-block;
   padding-left: 1%;
@@ -195,25 +200,9 @@ ul, ol {
   padding: 0;
   margin: 0; }
 
-section li {
-  text-align: left;
-  margin-left: 20%; }
-
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
-@font-face {
-  font-family: "Riesling";
-  src: url("../fonts/riesling.ttf"); }
-
-@font-face {
-  font-family: "Caslon Antique";
-  src: url("../fonts/caslon-antique.ttf"); }
-
-@font-face {
-  font-family: "Treasury Platinum";
-  src: url("../fonts/treasury-platinum.ttf"); }
 
 @font-face {
   font-family: "Edwardian Script";
