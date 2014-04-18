@@ -1,0 +1,262 @@
+html {
+  background: white;
+  color: black;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  line-height: 1.5; }
+
+a {
+  transition: all 0.25s ease-in-out; }
+
+body {
+  color: #04083c;
+  margin: 0;
+  text-align: center; }
+
+.container {
+  background: #04083c;
+  background: url("../img/scalesdrk.png");
+  padding-top: 60px; }
+
+header {
+  background: white;
+  background: url("../img/feathers.png");
+  border: 1px solid #04083c;
+  border-bottom-color: transparent;
+  display: block;
+  padding: 1.5em 3%;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 50%; }
+
+.main {
+  background: white;
+  background: url("../img/feathers.png");
+  border-top: 1px solid rgba(4, 8, 60, 0.2);
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 5%;
+  width: 75%; }
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 80%; }
+
+footer {
+  background: url("../img/mountain.png") bottom center no-repeat;
+  background-size: 40% auto;
+  height: 20%;
+  min-height: 250px; }
+
+.activity {
+  float: left;
+  height: 350px;
+  width: 33.33333%; }
+
+.nav {
+  display: inline-block;
+  padding-left: 1%;
+  margin-bottom: 3em; }
+  .nav li {
+    float: left;
+    padding-right: 1%; }
+    .nav li a:after {
+      color: #04083c;
+      content: " }"; }
+    .nav li a:before {
+      color: #04083c;
+      content: "{ "; }
+
+.group {
+  *zoom: 1; }
+  .group:before, .group:after {
+    content: "";
+    display: table; }
+  .group:after {
+    clear: both; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+.hr {
+  border-bottom: dotted 2px rgba(4, 8, 60, 0.5);
+  display: inline-block;
+  padding-bottom: 0.2em; }
+
+figure {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type='button'], input[type='reset'], input[type='submit'] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+input[type='checkbox'], input[type='radio'] {
+  box-sizing: border-box;
+  padding: 0; }
+input[type='search'] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+  input[type='search']::-webkit-search-cancel-button, input[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+.grid-container {
+  margin: 0 auto;
+  max-width: 1280px; }
+
+.col-1-4 {
+  float: left;
+  margin: 0 1.04167%;
+  width: 22.91667%; }
+
+.jquery-grid {
+  display: none;
+  height: 2000%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+
+.jquery-grid-container,
+.jquery-grid-col {
+  height: 100%; }
+
+.jquery-grid-col {
+  background-color: rgba(255, 0, 0, 0.2); }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+a {
+  color: #04083c;
+  text-decoration: none; }
+  a:focus {
+    outline: thin dotted;
+    color: #1c2bf0;
+    color: rgba(4, 8, 60, 0.5); }
+  a:active, a:hover {
+    outline: 0; }
+  a:active {
+    color: #0e1bcb;
+    color: rgba(4, 8, 60, 0.6); }
+  a:hover {
+    color: #0a159c;
+    color: rgba(4, 8, 60, 0.7); }
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "Edwardian Script";
+  src: url("../fonts/edwardian-script.ttf"); }
+
+@font-face {
+  font-family: "Champagne Limousines";
+  src: url("../fonts/champagne-limousines.ttf"); }
+
+body {
+  font-family: "Champagne Limousines"; }
+
+header, h4 {
+  font-family: "Edwardian Script", cursive; }
+
+h2, h3, h5 {
+  font-family: "Champagne Limousines", cursive; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
+h1 {
+  font-size: 9em; }
+
+h2, h3 {
+  font-size: 3em; }
+
+h4 {
+  font-size: 6.75em; }
+
+h5 {
+  font-size: 4.2em; }
+
+h6, .nav {
+  font-size: 2.7em; }
+
+section li, section p {
+  font-size: 2.25em; }
+
+h1 {
+  margin: 0 0 -20px; }
+
+h2, h3 {
+  margin: 0; }
+
+h4, h5, h6 {
+  margin: 0.5em 0 0 0; }
+
+b, strong {
+  font-weight: bold; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  white-space: pre-wrap; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
