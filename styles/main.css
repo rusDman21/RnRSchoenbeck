@@ -7,9 +7,6 @@ html {
   font-size: 62.5%;
   line-height: 1.5; }
 
-a {
-  transition: all 0.25s ease-in-out; }
-
 body {
   color: #04083c;
   margin: 0;
@@ -41,7 +38,7 @@ header {
   box-shadow: 0 -25px 30px -35px #04083c, inset 2px 8px 14px -2px white;
   margin: 0 auto;
   max-width: 1000px;
-  padding: 5%;
+  padding: 2.5% 5%;
   width: 75%; }
 
 section {
@@ -53,7 +50,7 @@ footer {
   background: url("../img/mountain.png") bottom center no-repeat;
   background-size: 40% auto;
   height: 20%;
-  min-height: 250px; }
+  min-height: 150px; }
 
 .activity {
   float: left;
@@ -62,17 +59,11 @@ footer {
 
 .nav {
   display: inline-block;
-  padding-left: 1%;
+  padding-left: 2%;
   margin-bottom: 3em; }
   .nav li {
     float: left;
-    padding-right: 1%; }
-    .nav li a:after {
-      color: #04083c;
-      content: " }"; }
-    .nav li a:before {
-      color: #04083c;
-      content: "{ "; }
+    padding-right: 2%; }
 
 .group {
   *zoom: 1; }
@@ -181,19 +172,20 @@ audio:not([controls]) {
 
 a {
   color: #04083c;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 0.25s ease-in-out; }
   a:focus {
     outline: thin dotted;
     color: #1c2bf0;
-    color: rgba(4, 8, 60, 0.5); }
+    color: rgba(4, 8, 60, 0.4); }
   a:active, a:hover {
     outline: 0; }
   a:active {
     color: #0e1bcb;
-    color: rgba(4, 8, 60, 0.6); }
+    color: rgba(4, 8, 60, 0.5); }
   a:hover {
     color: #0a159c;
-    color: rgba(4, 8, 60, 0.7); }
+    color: rgba(4, 8, 60, 0.6); }
 
 ul, ol {
   list-style: none;
@@ -206,20 +198,19 @@ table {
 
 @font-face {
   font-family: "Edwardian Script";
-  src: url("../fonts/edwardian-script.ttf"); }
+  src: url("../fonts/edwardian-script-webfont.eot");
+  src: url("../fonts/edwardian-script-webfont.eot") format("embedded-opentype"), url("../fonts/edwardian-script-webfont.woff") format("woff"), url("../fonts/edwardian-script-webfont.ttf") format("truetype"), url("../fonts/edwardian-script-webfont.svg") format("svg"); }
 
 @font-face {
   font-family: "Champagne Limousines";
-  src: url("../fonts/champagne-limousines.ttf"); }
+  src: url("../fonts/champagne-limousines-webfont.eot");
+  src: url("../fonts/champagne-limousines-webfont.eot") format("embedded-opentype"), url("../fonts/champagne-limousines-webfont.woff") format("woff"), url("../fonts/champagne-limousines-webfont.ttf") format("truetype"), url("../fonts/champagne-limousines-webfont.svg") format("svg"); }
 
-body {
+body, h2, h3, h5 {
   font-family: "Champagne Limousines"; }
 
 header, h4 {
   font-family: "Edwardian Script", cursive; }
-
-h2, h3, h5 {
-  font-family: "Champagne Limousines", cursive; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
@@ -236,8 +227,11 @@ h4 {
 h5 {
   font-size: 4.2em; }
 
-h6, .nav {
+h6 {
   font-size: 2.7em; }
+
+.nav {
+  font-size: 2.25em; }
 
 section li, section p {
   font-size: 2.25em; }
