@@ -54,7 +54,7 @@ footer {
 
 .activity {
   float: left;
-  height: 350px;
+  min-height: 300px;
   width: 33.33333%; }
 
 .nav {
