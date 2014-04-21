@@ -20,6 +20,7 @@ body {
 header {
   background: white;
   background: url("../img/feathers.png");
+  border: none;
   display: block;
   padding: 10px 20px;
   margin: 0 auto;
@@ -29,19 +30,19 @@ header {
 .main {
   background: white;
   background: url("../img/feathers.png");
-  margin: 0 auto;
-  width: 880px;
   padding: 40px;
 }
 
-section, footer {
-  width: 880px;
+section, footer, .main {
+  border: none;
   margin: 0 auto;
+  width: 880px;
 }
 
 footer {
+  background: white;
   background: url("../img/mountain.png") bottom center no-repeat;
-  background-size: 880px auto;
+  background-size: auto 250px;
 }
 
 .activity {
