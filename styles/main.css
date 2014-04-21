@@ -213,7 +213,8 @@ header, h4 {
   font-family: "Edwardian Script", cursive; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 400;
+  overflow: visible; }
 
 h1 {
   font-size: 9em; }
@@ -238,7 +239,9 @@ section li, section p {
 
 h1 {
   margin: 0 0 -20px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  overflow: visible;
+  zoom: 1; }
 
 h2, h3 {
   margin: 0; }
