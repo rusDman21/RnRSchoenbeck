@@ -20,7 +20,6 @@ body {
 header {
   background: white;
   background: url("../img/feathers.png");
-  border-bottom-color: transparent;
   display: block;
   padding: 10px 20px;
   margin: 0 auto;
@@ -36,14 +35,13 @@ header {
 }
 
 section, footer {
-  width: 720px;
+  width: 880px;
   margin: 0 auto;
 }
 
 footer {
   background: url("../img/mountain.png") bottom center no-repeat;
-  /*background-size: 400px auto;*/
-  /*height: 250px;*/
+  background-size: 880px auto;
 }
 
 .activity {
@@ -129,30 +127,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 textarea {
   overflow: auto;
   vertical-align: top; }
-
-.grid-container {
-  margin: 0 auto;
-  max-width: 1280px; }
-
-.col-1-4 {
-  float: left;
-  margin: 0 1.04167%;
-  width: 22.91667%; }
-
-.jquery-grid {
-  display: none;
-  height: 2000%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 9999; }
-
-.jquery-grid-container,
-.jquery-grid-col {
-  height: 100%; }
-
-.jquery-grid-col {
-  background-color: rgba(255, 0, 0, 0.2); }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
