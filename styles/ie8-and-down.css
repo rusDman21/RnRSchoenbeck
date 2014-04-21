@@ -20,7 +20,7 @@ body {
 header {
   background: white;
   background: url("../img/feathers.png");
-  /*border: none;*/
+  border: none;
   display: block;
   padding: 10px 20px;
   margin: 0 auto;
@@ -34,16 +34,16 @@ header {
 }
 
 section, .main {
-  /*border: none;*/
+  border: none;
   margin: 0 auto;
   width: 880px;
 }
 
 footer {
   background: white;
-  background: url("../img/mountain.png") bottom center no-repeat;
+  background: url("../img/mountain-sm.png") bottom center no-repeat;
   background-size: 880px 250px;
-  /*border: none;*/
+  border: none;
   margin: 0 auto;
   padding: 40px;
 }
