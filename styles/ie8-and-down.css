@@ -197,12 +197,12 @@ table {
 @font-face {
   font-family: "Edwardian Script";
   src: url("../fonts/edwardian-script-webfont.eot");
-  src: url("../fonts/edwardian-script-webfont.eot") format("embedded-opentype"), url("../fonts/edwardian-script-webfont.woff") format("woff"), url("../fonts/edwardian-script-webfont.ttf") format("truetype"), url("../fonts/edwardian-script-webfont.svg") format("svg"); }
+  src: url("../fonts/edwardian-script-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/edwardian-script-webfont.woff") format("woff"), url("../fonts/edwardian-script-webfont.ttf") format("truetype"), url("../fonts/edwardian-script-webfont.svg") format("svg"); }
 
 @font-face {
   font-family: "Champagne Limousines";
   src: url("../fonts/champagne-limousines-webfont.eot");
-  src: url("../fonts/champagne-limousines-webfont.eot") format("embedded-opentype"), url("../fonts/champagne-limousines-webfont.woff") format("woff"), url("../fonts/champagne-limousines-webfont.ttf") format("truetype"), url("../fonts/champagne-limousines-webfont.svg") format("svg"); }
+  src: url("../fonts/champagne-limousines-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/champagne-limousines-webfont.woff") format("woff"), url("../fonts/champagne-limousines-webfont.ttf") format("truetype"), url("../fonts/champagne-limousines-webfont.svg") format("svg"); }
 
 body {
   font-family: "Champagne Limousines"; }
