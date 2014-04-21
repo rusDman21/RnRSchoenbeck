@@ -41,7 +41,7 @@ section, .main {
 
 footer {
   background: white;
-  background: url("../img/mountainsmall.png") bottom center no-repeat;
+  background: url("../img/mountain-sm.png") bottom center no-repeat;
   background-size: 880px 250px;
   border: none;
   margin: 0 auto;
