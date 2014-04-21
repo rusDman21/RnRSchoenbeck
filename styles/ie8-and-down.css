@@ -44,7 +44,7 @@ footer {
   background: url("../img/mountain-sm.png") bottom center no-repeat;
   border: none;
   height: 184px;
-  margin: 0 auto 60px;
+  margin-bottom: 60px;
   width: 880px;
 }
 
