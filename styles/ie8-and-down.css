@@ -14,7 +14,7 @@ body {
 
 .container {
   background: #04083c;
-  background: url("../img/scalesdrk.png");
+  background: url("../img/scales-drk-blue.png");
   padding-top: 60px; }
 
 header {
@@ -51,7 +51,7 @@ footer {
 .activity {
   float: left;
   height: 350px;
-  width: 33.33333%; }
+  width: 33%; }
 
 .nav {
   display: inline-block;
