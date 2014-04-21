@@ -33,7 +33,7 @@ header {
   padding: 40px;
 }
 
-section, footer, .main {
+section, .main {
   border: none;
   margin: 0 auto;
   width: 880px;
@@ -43,6 +43,9 @@ footer {
   background: white;
   background: url("../img/mountain.png") bottom center no-repeat;
   background-size: auto 250px;
+  border: none;
+  margin: 0 auto;
+  padding: 40px;
 }
 
 .activity {
