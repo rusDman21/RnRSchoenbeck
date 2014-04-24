@@ -94,17 +94,17 @@ footer
   // background-color: blue
   float: left
   margin: 10px 4%
-  
+  text-align: center
   width: 42%
 
 
 
 .party-male
-  text-align: left
+  // text-align: left
 
 
 .party-female
-  text-align: right
+  // text-align: right
 
 .trial
   // margin: 0 auto
@@ -402,8 +402,12 @@ h1, h2, h3, h4, h5, h6
 h1
   font-size: $base-size * 3
 
-h2, h3
+h2
   font-size: $base-size * 1
+
+h3
+  font-size: $base-size * 1
+  font-weight: 800
 
 h4
   font-size: $base-size * 2.25
@@ -427,8 +431,11 @@ h1
   overflow: visible
   zoom: 1
 
-h2, h3
+h2
   margin: 0
+
+h3
+  margin: .5em 0 .3em 0 
 
 h4, h5, h6
   margin: .5em 0 0 0 
@@ -450,6 +457,10 @@ pre
 // Set consistent quote types.
 q
   quotes: '\201C' '\201D' '\2018' '\2019'
+
+em
+  // font-size: $base-size * .25
+  font-weight: 200
 
 .press-heavy, h4
   text-shadow: $press-hvy

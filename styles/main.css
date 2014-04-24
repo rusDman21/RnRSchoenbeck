@@ -60,13 +60,8 @@ footer {
 .party-male, .party-female {
   float: left;
   margin: 10px 4%;
+  text-align: center;
   width: 42%; }
-
-.party-male {
-  text-align: left; }
-
-.party-female {
-  text-align: right; }
 
 nav {
   width: 100%;
@@ -236,8 +231,12 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 9em; }
 
-h2, h3 {
+h2 {
   font-size: 3em; }
+
+h3 {
+  font-size: 3em;
+  font-weight: 800; }
 
 h4 {
   font-size: 6.75em; }
@@ -260,8 +259,11 @@ h1 {
   overflow: visible;
   zoom: 1; }
 
-h2, h3 {
+h2 {
   margin: 0; }
+
+h3 {
+  margin: 0.5em 0 0.3em 0; }
 
 h4, h5, h6 {
   margin: 0.5em 0 0 0; }
@@ -279,6 +281,9 @@ pre {
 
 q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+em {
+  font-weight: 200; }
 
 .press-heavy, h4 {
   text-shadow: 1px 1px 2px white, -1px -1px 1px rgba(2, 5, 36, 0.5); }
