@@ -57,15 +57,12 @@ footer {
   min-height: 300px;
   width: 33.33333%; }
 
-#trial {
-  color: white; }
-
 .nav {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: white;
   box-shadow: 0 10px 40px rgba(4, 8, 60, 0.2);
   position: fixed;
-  padding: 15px 0 15px 20%; }
+  padding: 8px 0 8px 20%; }
   .nav li {
     float: left;
     padding-right: 3%; }
