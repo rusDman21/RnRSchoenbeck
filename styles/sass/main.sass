@@ -73,7 +73,6 @@ header
 
 section
   max-width: 800px
-  // background-color: pink
   margin: 0 auto
   width: 80%
 
@@ -88,35 +87,20 @@ footer
   min-height: 300px
   width: 33.3333333333%
 
-
-
 .party-male, .party-female
-  // background-color: blue
   float: left
   margin: 10px 4%
   text-align: center
   width: 42%
 
 
-
-.party-male
-  // text-align: left
-
-
-.party-female
-  // text-align: right
-
-.trial
-  // margin: 0 auto
-  // background-color: orange
-
-
-
 // ~~~~~~~~~~NAVIGATION~~~~~~~~~~
 
 nav
   width: 100%
-  background-color: rgb(255, 255, 255)
+  background-color: $white
+  background: $bkgrnd-lt
+  border-radius: 0 0 10px 10px
   box-shadow: 0 10px 40px fade-out($blue, .85)
   padding: 10px 0
   position: fixed
@@ -392,7 +376,7 @@ table
 body, h2, h3, h5
   font-family: 'Champagne Limousines'
 
-header, h4
+h1, h4
   font-family: 'Edwardian Script', cursive
 
 h1, h2, h3, h4, h5, h6
@@ -444,6 +428,9 @@ h4, h5, h6
 b, strong
   font-weight: bold
 
+em
+  font-weight: 200
+
 // Address differences between Firefox and other browsers.
 hr
   -moz-box-sizing: content-box
@@ -457,10 +444,6 @@ pre
 // Set consistent quote types.
 q
   quotes: '\201C' '\201D' '\2018' '\2019'
-
-em
-  // font-size: $base-size * .25
-  font-weight: 200
 
 .press-heavy, h4
   text-shadow: $press-hvy

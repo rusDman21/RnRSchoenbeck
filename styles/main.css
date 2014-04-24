@@ -66,6 +66,8 @@ footer {
 nav {
   width: 100%;
   background-color: white;
+  background: url("../img/feathers.png");
+  border-radius: 0 0 10px 10px;
   box-shadow: 0 10px 40px rgba(4, 8, 60, 0.15);
   padding: 10px 0;
   position: fixed; }
@@ -221,7 +223,7 @@ table {
 body, h2, h3, h5 {
   font-family: "Champagne Limousines"; }
 
-header, h4 {
+h1, h4 {
   font-family: "Edwardian Script", cursive; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -271,6 +273,9 @@ h4, h5, h6 {
 b, strong {
   font-weight: bold; }
 
+em {
+  font-weight: 200; }
+
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -281,9 +286,6 @@ pre {
 
 q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
-
-em {
-  font-weight: 200; }
 
 .press-heavy, h4 {
   text-shadow: 1px 1px 2px white, -1px -1px 1px rgba(2, 5, 36, 0.5); }
