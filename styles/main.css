@@ -38,7 +38,7 @@ header {
   box-shadow: 0 -25px 30px -35px #04083c, inset 2px 8px 14px -2px white;
   margin: 0 auto;
   max-width: 1040px;
-  padding: 2.5% 5%;
+  padding: 1% 5% 2.5% 5%;
   width: 75%; }
 
 section {
@@ -60,7 +60,7 @@ footer {
 .nav {
   width: 100%;
   background-color: white;
-  box-shadow: 0 10px 40px rgba(4, 8, 60, 0.2);
+  box-shadow: 0 10px 40px rgba(4, 8, 60, 0.15);
   position: fixed;
   padding: 8px 0 8px 20%; }
   .nav li {
