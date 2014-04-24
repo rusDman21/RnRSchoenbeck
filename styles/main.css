@@ -14,8 +14,8 @@ body {
 
 .container {
   background: #04083c;
-  background: linear-gradient(to bottom, #04083c 2%, rgba(4, 8, 60, 0.8) 6%, rgba(4, 8, 60, 0.6) 12%, white 60%), url("../img/scalesdrk.png");
-  padding-top: 60px; }
+  background: linear-gradient(to bottom, rgba(4, 8, 60, 0.8) 2%, rgba(4, 8, 60, 0.7) 6%, rgba(4, 8, 60, 0.6) 12%, white 60%), url("../img/scalesdrk.png");
+  padding-top: 110px; }
 
 header {
   background: white;
@@ -57,13 +57,18 @@ footer {
   min-height: 300px;
   width: 33.33333%; }
 
+#trial {
+  color: white; }
+
 .nav {
-  display: inline-block;
-  padding-left: 2%;
-  margin-bottom: 3em; }
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 40px rgba(4, 8, 60, 0.2);
+  position: fixed;
+  padding: 15px 0 15px 20%; }
   .nav li {
     float: left;
-    padding-right: 2%; }
+    padding-right: 3%; }
 
 .group {
   *zoom: 1; }
