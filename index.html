@@ -13,14 +13,17 @@
 </head>
 <body>
 
-<ul class="nav group">
-			<li><a href="#events" class="scroll" data-speed="1000">Wedding Events</a></li>
-			<li><a href="#attire" class="scroll" data-speed="1000">Attire</a></li>
-			<li><a href="#lodging" class="scroll" data-speed="1000">Lodging</a></li>
-			<li><a href="#transportation" class="scroll" data-speed="1000">Transportation</a></li>
-			<li><a href="#activities" class="scroll" data-speed="1000">Area Activities</a></li>
-			<li><a href="#registry" class="scroll" data-speed="1000">Registry</a></li>
-		</ul>
+<nav data-scroll-header>
+	<ul class="group">
+		<li><a href="#story" data-scroll data-speed="1000">Our Story</a></li>
+		<li><a href="#events" data-scroll data-speed="1000">Wedding Events</a></li>
+		<li><a href="#attire" data-scroll data-speed="1000">Attire</a></li>
+		<li><a href="#lodging" data-scroll data-speed="1000">Lodging</a></li>
+		<li><a href="#transportation" data-scroll data-speed="1000">Transportation</a></li>
+		<li><a href="#activities" data-scroll data-speed="1000">Area Activities</a></li>
+		<li><a href="#registry" data-scroll data-speed="1000">Registry</a></li>
+	</ul>
+</nav>
 
 <div class="container">
 
@@ -34,7 +37,14 @@
 
 		<section id="story">
 			<h4>Our Story</h4>
-			<h5>Chicago, March 2010</h5>
+			<p class="justify">Our story begins in 2010 in a little hair salon in the Lincoln Park neighborhood of Chicago where Renee was working with Sara, Russell’s stepmom. Sara often talked to Renee about Russell, her hilarious and smart stepson who lived in Michigan. Finally, Renee’s interest was peaked, and she decided to send Russell a Facebook message. Over the next few months, Renee and Russell travelled between Michigan and Illinois, and eventually, Russell moved back to his hometown of Chicago. Russell and Renee moved in to a charming little Wicker Park apartment in May of 2012. On Friday, August 30, 2013, Russell and Renee got engaged! After much discussion and exploration, we decided to make Colorado our new home, and moved to Broomfield in April of 2014. We are so excited for our future together and can’t wait to share our special day with you!</p>
+
+			<!-- <h4>The Proposal</h4>
+			
+			<p class="justify">On Friday, August 30, 2013, around 3:00, my boss announced that everyone should start the weekend early and head home. I had no idea what I would do with my afternoon, so when I texted Russell and he responded “Nice! What are you going to do? Head home?” I responded, “I don’t know! The world is my oyster!” I decided to just take my time commuting and head home. Normally, the walk from the Blue Line took about 8 minutes – but that day, I was enjoying the weather, so it took about 20. When I arrived at the apartment, I noticed that the door was unlocked. I opened the door, panicked a little, and said “HELLO??” No one answered. I walked inside and was sure I was going to be attacked. I felt that panic for about 20 seconds, until I noticed that music was on and the dishes were done. From behind me, I heard “Hello!” and I turned around and Russell was there. He told me he had a very busy day and suggested we go outside to the backyard. Our apartment had a beautiful garden in the back, and when we walked out I noticed there were flowers and bottles of wine waiting. I immediately started to cry and I’m not even sure if he fully got the words “will you marry me” out before I started screaming “YES!” One of my most favorite things about the day (there are many) was that we kept the moment private for a few hours. We didn’t rush to tell anyone. We opened a bottle of wine, had some drinks, went to dinner, and just reveled in our own excitement for a bit. It was amazing. When we finally started sharing the news, it was so fun to enjoy other people’s excitement! I love Russell so much, he is everything I have ever wanted in a husband, and I am so excited to be his wife!</p> -->
+
+
+			<!-- <h5>Chicago, March 2010</h5>
 			<ol>
 				<li>girl meets boy’s stepmom.</li>
 				<li>girl sends Facebook message to boy about the weather and giggles.</li>
@@ -51,7 +61,7 @@
 			<ol>
 				<li>boy and girl get married.</li>
 				<li>husband and wife celebrate with their family and friends.</li>
-			</ol>
+			</ol> -->
 		</section>	
 			
 		<section id="party">
@@ -222,5 +232,6 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="scripts/main.js"></script>
+<script>smoothScroll.init();</script>
 </body>
 </html>
