@@ -44,8 +44,8 @@ body
 
 .container
   background: $blue
-  background: linear-gradient(to bottom, fade-out($blue, 0) 2%, fade-out($blue, .2) 6%, fade-out($blue, .4) 12%, $white 60%), $bkgrnd-dk
-  padding-top: 60px
+  background: linear-gradient(to bottom, fade-out($blue, .2) 2%, fade-out($blue, .3) 6%, fade-out($blue, .4) 12%, $white 60%), $bkgrnd-dk
+  padding-top: 110px
 
 header
   background: $white
@@ -90,19 +90,18 @@ footer
 
 // ~~~~~~~~~~NAVIGATION~~~~~~~~~~
 
+#trial
+  color: $white
+
 .nav
-  display: inline-block
-  padding-left: 2%
-  margin-bottom: 3em
+  width: 100%
+  background-color: rgba(255, 255, 255, .95)
+  box-shadow: 0 10px 40px fade-out($blue, .8)
+  position: fixed
+  padding: 15px 0 15px 20%
   li
     float: left
-    padding-right: 2%
-    // & a:after
-    //   color: $blue
-    //   content: ' }'
-    // & a:before
-    //   color: $blue
-    //   content: '{ '
+    padding-right: 3%
 
 // ~~~~~~~~~~CLEARFIX~~~~~~~~~~
 
