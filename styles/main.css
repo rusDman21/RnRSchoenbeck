@@ -39,12 +39,12 @@ header {
   margin: 0 auto;
   max-width: 1040px;
   padding: 1% 5% 2.5% 5%;
-  width: 75%; }
+  width: 80%; }
 
 section {
   max-width: 800px;
-  margin: 0 auto;
-  width: 80%; }
+  margin: 10% auto;
+  width: 90%; }
 
 footer {
   background: url("../img/mountain.png") bottom center no-repeat;
@@ -62,6 +62,23 @@ footer {
   margin: 10px 4%;
   text-align: center;
   width: 42%; }
+
+.event {
+  margin: 60px 0;
+  width: 100%; }
+
+.details {
+  text-align: left;
+  width: 40%; }
+
+.venue {
+  width: 60%; }
+
+.pull {
+  float: left; }
+
+.overview {
+  width: 33.33333%; }
 
 nav {
   width: 100%;
@@ -88,15 +105,11 @@ nav li {
     clear: both; }
 
 img {
-  border: 0; }
+  border: 0;
+  display: block; }
 
 svg:not(:root) {
   overflow: hidden; }
-
-.hr {
-  border-bottom: dotted 2px rgba(4, 8, 60, 0.5);
-  display: inline-block;
-  padding-bottom: 0.2em; }
 
 figure {
   margin: 0; }
@@ -146,30 +159,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 textarea {
   overflow: auto;
   vertical-align: top; }
-
-.grid-container {
-  margin: 0 auto;
-  max-width: 1280px; }
-
-.col-1-4 {
-  float: left;
-  margin: 0 1.04167%;
-  width: 22.91667%; }
-
-.jquery-grid {
-  display: none;
-  height: 2000%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 9999; }
-
-.jquery-grid-container,
-.jquery-grid-col {
-  height: 100%; }
-
-.jquery-grid-col {
-  background-color: rgba(255, 0, 0, 0.2); }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
@@ -249,29 +238,23 @@ h5 {
 h6 {
   font-size: 2.7em; }
 
-nav {
-  font-size: 2.25em; }
-
 p {
   font-size: 1.95em; }
 
-section li {
+li {
   font-size: 2.25em; }
 
 h1 {
-  margin: 0 0 -20px;
+  margin: 0 0 -30px;
   padding-right: 30px;
   overflow: visible;
   zoom: 1; }
 
-h2 {
+h2, h4, h5, h6 {
   margin: 0; }
 
 h3 {
   margin: 0.5em 0 0.3em 0; }
-
-h4, h5, h6 {
-  margin: 0.5em 0 0 0; }
 
 b, strong {
   font-weight: bold; }
@@ -298,7 +281,3 @@ q {
 
 .justify {
   text-align: justify; }
-
-.pull {
-  float: left;
-  width: 33.33333%; }

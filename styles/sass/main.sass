@@ -69,12 +69,12 @@ header
   margin: 0 auto
   max-width: $max-width + px
   padding: 1% 5% 2.5% 5%
-  width: 75%
+  width: 80%
 
 section
   max-width: 800px
-  margin: 0 auto
-  width: 80%
+  margin: 10% auto
+  width: 90%
 
 footer
   background: url('../img/mountain.png') bottom center no-repeat
@@ -92,6 +92,23 @@ footer
   margin: 10px 4%
   text-align: center
   width: 42%
+
+.event
+  margin: 60px 0
+  width: 100%
+
+.details
+  text-align: left
+  width: 40%
+
+.venue
+  width: 60%
+
+.pull
+  float: left
+
+.overview
+  width: 33.333333%
 
 
 // ~~~~~~~~~~NAVIGATION~~~~~~~~~~
@@ -130,15 +147,11 @@ nav
 // Remove border when inside `a` element in IE 8/9.
 img
   border: 0
+  display: block
 
 // Correct overflow displayed oddly in IE 9.
 svg:not(:root)
   overflow: hidden
-
-.hr
-  border-bottom: dotted 2px fade-out($blue, .5)
-  display: inline-block
-  padding-bottom: .2em
 
 
 // ~~~~~~~~~~FIGURES~~~~~~~~~~
@@ -232,35 +245,32 @@ textarea
 
 // ~~~~~~~~~~GRID~~~~~~~~~~
 
-.grid-container
-  margin: 0 auto
-  max-width: 1280px
+// .grid-container
+//   margin: 0 auto
+//   max-width: 1280px
 
-.col-1-4
-  float: left
-  margin: 0 1.041666667%
-  width: 22.916666667%
-
+// .col-1-4
+//   float: left
+//   margin: 0 1.041666667%
+//   width: 22.916666667%
 
 
 // use variables above to get .col-1-12 in terms of percenteg for width and margin
 
-.jquery-grid
-  display: none
-  height: 2000%
-  position: absolute
-  top: 0
-  width: 100%
-  z-index: 9999
+// .jquery-grid
+//   display: none
+//   height: 2000%
+//   position: absolute
+//   top: 0
+//   width: 100%
+//   z-index: 9999
 
-.jquery-grid-container,
-.jquery-grid-col
-  height: 100%
+// .jquery-grid-container,
+// .jquery-grid-col
+//   height: 100%
 
-.jquery-grid-col 
-  background-color: rgba(255, 0, 0, .2)
-
-
+// .jquery-grid-col 
+//   background-color: rgba(255, 0, 0, .2)
 
 
 // $gutter: 20
@@ -402,30 +412,23 @@ h5
 h6
   font-size: $base-size * .9
 
-nav
-  font-size: $base-size * .75
-
 p
   font-size: $base-size * .65
 
-section
-  li
-    font-size: $base-size * .75
+li
+  font-size: $base-size * .75
 
 h1
-  margin: 0 0 -20px
+  margin: 0 0 -30px
   padding-right: 30px
   overflow: visible
   zoom: 1
 
-h2
+h2, h4, h5, h6
   margin: 0
 
 h3
   margin: .5em 0 .3em 0 
-
-h4, h5, h6
-  margin: .5em 0 0 0 
 
 // Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
 b, strong
@@ -457,9 +460,6 @@ q
 .justify
   text-align: justify
 
-.pull
-  float: left
-  width: 33.333333%
 
 
 
