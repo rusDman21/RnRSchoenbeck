@@ -57,6 +57,17 @@ footer {
   min-height: 300px;
   width: 33.33333%; }
 
+.party-male, .party-female {
+  float: left;
+  margin: 10px 4%;
+  width: 42%; }
+
+.party-male {
+  text-align: left; }
+
+.party-female {
+  text-align: right; }
+
 nav {
   width: 100%;
   background-color: white;
