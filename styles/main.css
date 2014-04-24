@@ -252,7 +252,10 @@ h6 {
 nav {
   font-size: 2.25em; }
 
-section li, section p {
+p {
+  font-size: 1.95em; }
+
+section li {
   font-size: 2.25em; }
 
 h1 {
@@ -294,5 +297,8 @@ q {
   text-shadow: 1px 1px 1px white; }
 
 .justify {
-  text-align: justify;
-  font-size: 1.95em; }
+  text-align: justify; }
+
+.pull {
+  float: left;
+  width: 33.33333%; }
