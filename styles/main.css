@@ -64,15 +64,12 @@ footer {
   width: 42%; }
 
 .event {
-  margin: 60px 0;
+  margin: 10% 0;
   width: 100%; }
 
 .details {
   text-align: left;
   width: 40%; }
-
-.venue {
-  width: 60%; }
 
 .pull {
   float: left; }
@@ -106,10 +103,19 @@ nav li {
 
 img {
   border: 0;
+  border-radius: 10px;
   display: block; }
 
 svg:not(:root) {
   overflow: hidden; }
+
+.us {
+  width: 100%;
+  margin-bottom: 10%; }
+
+.venue {
+  width: 60%;
+  margin-bottom: 3%; }
 
 figure {
   margin: 0; }
