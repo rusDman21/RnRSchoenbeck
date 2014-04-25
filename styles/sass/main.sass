@@ -121,6 +121,7 @@ nav
   box-shadow: 0 10px 40px fade-out($blue, .85)
   padding: 10px 0
   position: fixed
+  z-index: 1000
 
 nav
   ul
@@ -154,10 +155,23 @@ img
 svg:not(:root)
   overflow: hidden
 
-.us
+
+.usback
+  background: url('../img/russellreneehover.jpg')
+  background-size: 100%
+  border-radius: 10px
+  margin-bottom: 80px
   width: 100%
-  margin-bottom: 10%
-  transition: opacity .4s ease-in
+
+.us
+  border-radius: 10px
+  transition: opacity .25s ease-in
+  width: 100%
+
+.us:hover
+  opacity: 0
+  filter: alpha(opacity=0)
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
 
 .venue
   width: 60%
