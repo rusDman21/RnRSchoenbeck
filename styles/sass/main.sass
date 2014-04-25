@@ -159,6 +159,10 @@ svg:not(:root)
   width: 60%
   margin-bottom: 3%
 
+.lodge
+  margin: 0 auto
+  width: 90%
+
 
 // ~~~~~~~~~~FIGURES~~~~~~~~~~
 
@@ -337,7 +341,7 @@ audio:not([controls])
 // ~~~~~~~~~~LINKS~~~~~~~~~~
 
 a
-  color: $blue
+  color: fade-out(lighten($blue, 15%), .15)
   text-decoration: none
   transition: all .25s ease-in-out
 
@@ -352,12 +356,10 @@ a
     outline: 0
 
   &:active
-    color: lighten($blue, 30%)
-    color: fade-out($blue, .5)
+    color: fade-out(lighten($blue, 30%), .5)
 
   &:hover
-    color: lighten($blue, 20%)
-    color: fade-out($blue, .4)
+    color: fade-out(lighten($blue, 20%), .4)
 
 
 // ~~~~~~~~~~LISTS~~~~~~~~~~
@@ -372,6 +374,12 @@ dt, .justify
 
 dl, .left
   text-align: left
+
+.option
+  dt
+    font-size: $base-size * .4
+  dd
+    margin-bottom: 1%
 
 
 // ~~~~~~~~~~TABLES~~~~~~~~~~

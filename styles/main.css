@@ -117,6 +117,10 @@ svg:not(:root) {
   width: 60%;
   margin-bottom: 3%; }
 
+.lodge {
+  margin: 0 auto;
+  width: 90%; }
+
 figure {
   margin: 0; }
 
@@ -180,7 +184,7 @@ audio:not([controls]) {
   display: none; }
 
 a {
-  color: #04083c;
+  color: rgba(9, 18, 132, 0.85);
   text-decoration: none;
   transition: all 0.25s ease-in-out; }
   a:focus {
@@ -190,11 +194,9 @@ a {
   a:active, a:hover {
     outline: 0; }
   a:active {
-    color: #0e1bcb;
-    color: rgba(4, 8, 60, 0.5); }
+    color: rgba(14, 27, 203, 0.5); }
   a:hover {
-    color: #0a159c;
-    color: rgba(4, 8, 60, 0.6); }
+    color: rgba(10, 21, 156, 0.6); }
 
 ul, ol, dl {
   list-style: none;
@@ -206,6 +208,11 @@ dt, .justify {
 
 dl, .left {
   text-align: left; }
+
+.option dt {
+  font-size: 1.2em; }
+.option dd {
+  margin-bottom: 1%; }
 
 table {
   border-collapse: collapse;
