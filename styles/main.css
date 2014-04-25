@@ -117,9 +117,6 @@ svg:not(:root) {
   margin-bottom: 10%;
   transition: opacity 0.4s ease-in; }
 
-.us:hover {
-  opacity: 0; }
-
 .venue {
   width: 60%;
   margin-bottom: 3%; }
