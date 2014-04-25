@@ -68,8 +68,8 @@ footer {
   width: 100%; }
 
 .details {
-  text-align: left;
-  width: 40%; }
+  width: 40%;
+  text-align: left; }
 
 .pull {
   float: left; }
@@ -196,10 +196,16 @@ a {
     color: #0a159c;
     color: rgba(4, 8, 60, 0.6); }
 
-ul, ol {
+ul, ol, dl {
   list-style: none;
   padding: 0;
   margin: 0; }
+
+dt, .justify {
+  text-align: justify; }
+
+dl, .left {
+  text-align: left; }
 
 table {
   border-collapse: collapse;
@@ -244,7 +250,7 @@ h5 {
 h6 {
   font-size: 2.7em; }
 
-p {
+p, dl {
   font-size: 1.95em; }
 
 li {
@@ -263,7 +269,7 @@ h3 {
   margin: 0.5em 0 0.3em 0; }
 
 b, strong {
-  font-weight: bold; }
+  font-weight: 600; }
 
 em {
   font-weight: 200; }
@@ -284,6 +290,3 @@ q {
 
 .press-light, nav {
   text-shadow: 1px 1px 1px white; }
-
-.justify {
-  text-align: justify; }

@@ -98,8 +98,8 @@ footer
   width: 100%
 
 .details
-  text-align: left
   width: 40%
+  text-align: left
 
 .pull
   float: left
@@ -362,10 +362,16 @@ a
 
 // ~~~~~~~~~~LISTS~~~~~~~~~~
 
-ul, ol
+ul, ol, dl
   list-style: none
   padding: 0
   margin: 0
+
+dt, .justify
+  text-align: justify
+
+dl, .left
+  text-align: left
 
 
 // ~~~~~~~~~~TABLES~~~~~~~~~~
@@ -418,7 +424,7 @@ h5
 h6
   font-size: $base-size * .9
 
-p
+p, dl
   font-size: $base-size * .65
 
 li
@@ -438,7 +444,7 @@ h3
 
 // Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
 b, strong
-  font-weight: bold
+  font-weight: 600
 
 em
   font-weight: 200
@@ -462,10 +468,6 @@ q
 
 .press-light, nav
   text-shadow: $press-lt
-
-.justify
-  text-align: justify
-
 
 
 
