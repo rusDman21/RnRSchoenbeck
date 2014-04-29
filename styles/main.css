@@ -71,13 +71,15 @@ span {
   width: 100%; }
 
 .details {
-  width: 40%;
-  text-align: left; }
+  float: left;
+  text-align: left;
+  width: 40%; }
 
 .pull {
   float: left; }
 
 .overview {
+  float: left;
   width: 33.33333%; }
 
 nav {
@@ -131,8 +133,9 @@ svg:not(:root) {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
 
 .venue {
-  width: 60%;
-  margin-bottom: 3%; }
+  float: left;
+  margin-bottom: 3%;
+  width: 60%; }
 
 .lodge {
   margin: 0 auto;
@@ -144,7 +147,8 @@ svg:not(:root) {
 
 .wedpicsapp {
   width: 46%;
-  margin: 0 2%; }
+  margin: 0 2%;
+  float: left; }
 
 figure {
   margin: 0; }
@@ -393,14 +397,15 @@ q {
     font-size: 2em; }
 
   h3 {
-    font-size: 2.5em;
+    font-size: 2.425em;
     font-weight: 800; }
 
   h4 {
-    font-size: 5.625em; }
+    font-size: 5.425em; }
 
   h5 {
-    font-size: 3.25em; }
+    font-size: 3.25em;
+    margin-top: 10px; }
 
   h6, .registry {
     font-size: 2.25em; }
@@ -409,4 +414,43 @@ q {
     font-size: 1.625em; }
 
   li {
-    font-size: 1.75em; } }
+    font-size: 1.75em; }
+
+  .party-male li, .party-female li {
+    font-size: 1.725em;
+    padding: 8px 0; }
+
+  .overview {
+    float: none;
+    margin: 0 auto;
+    width: 80%; }
+    .overview h3 {
+      margin: 0.75em 0 0.25em 0; }
+
+  .details {
+    float: none;
+    margin: 0 auto;
+    width: 80%; }
+    .details h5, .details li {
+      text-align: center; }
+
+  .venue {
+    float: none;
+    margin: 5% auto;
+    width: 80%; }
+
+  .activity {
+    float: none;
+    margin: 0 auto;
+    width: 80%; }
+
+  .wedpics {
+    width: 80%; }
+
+  #behind li {
+    font-size: 1.625em;
+    padding: 4px 0; }
+
+  footer {
+    background-size: 70% auto;
+    min-height: 120px; } }
