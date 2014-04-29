@@ -117,7 +117,7 @@ svg:not(:root) {
   background: url("../img/russellreneehover.jpg");
   background-size: 100%;
   border-radius: 10px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   width: 100%; }
 
 .us {
@@ -323,7 +323,37 @@ q {
 .press-light, nav {
   text-shadow: 1px 1px 1px white; }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 1120px) and (min-width: 720px) {
+  h1 {
+    font-size: 9em; }
+
+  h2 {
+    font-size: 3em; }
+
+  h3 {
+    font-size: 3em;
+    font-weight: 800; }
+
+  h4 {
+    font-size: 6.75em; }
+
+  h5 {
+    font-size: 3.9em; }
+
+  h6, .registry {
+    font-size: 2.7em; }
+
+  p, dl, span {
+    font-size: 1.95em; }
+
+  li {
+    font-size: 2.1em; }
+
+  nav ul {
+    padding-left: 15px; }
+  nav li {
+    margin-right: 15px; } }
+@media all and (max-width: 720px) and (min-width: 420px) {
   h1 {
     font-size: 6.45em; }
 
@@ -347,4 +377,36 @@ q {
     font-size: 1.3975em; }
 
   li {
-    font-size: 1.505em; } }
+    font-size: 1.505em; }
+
+  nav ul {
+    padding-left: 10px; }
+  nav li {
+    margin-right: 10px; } }
+@media all and (max-width: 420px) {
+  h1 {
+    font-size: 5em;
+    margin: 0 0 -10px;
+    padding-right: 20px; }
+
+  h2 {
+    font-size: 2em; }
+
+  h3 {
+    font-size: 2.5em;
+    font-weight: 800; }
+
+  h4 {
+    font-size: 5.625em; }
+
+  h5 {
+    font-size: 3.25em; }
+
+  h6, .registry {
+    font-size: 2.25em; }
+
+  p, dl, span {
+    font-size: 1.625em; }
+
+  li {
+    font-size: 1.75em; } }
