@@ -78,6 +78,19 @@ img {
 svg:not(:root) {
   overflow: hidden; }
 
+.usback {
+  margin-bottom: 50px;
+  width: 100%; }
+
+.us {
+  width: 100%; }
+
+.us:hover {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)"; }
+
+
 .hr {
   border-bottom: dotted 2px rgba(4, 8, 60, 0.5);
   display: inline-block;
