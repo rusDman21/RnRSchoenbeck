@@ -449,7 +449,12 @@ q
 
 // ~~~~~~~~~~MEDIA QUERIES~~~~~~~~~~
 
-@media all and (max-width: 1120px) and (min-width: 720px)
+@media all and (max-width: 1320px) and (min-width: 1120px)
+  .hide-med
+    display: none
+
+
+@media all and (max-width: 1120px) and (min-width: 920px)
   $base-size: 3em
 
   h1
@@ -483,10 +488,12 @@ q
     li
       margin-right: 15px
 
+  .hide-med
+    display: none
 
 
-@media all and (max-width: 720px) and (min-width: 420px)
-  $base-size: 2.15em
+@media all and (max-width: 920px) and (min-width: 720px)
+  $base-size: 3em
 
   h1
     font-size: $base-size * 3
@@ -515,12 +522,58 @@ q
 
   nav
     ul
-      padding-left: 10px
+      padding-left: 15px
     li
-      margin-right: 10px
+      margin-right: 15px
+
+  .hide-med, .hide-sm
+    display: none
 
 
-@media all and (max-width: 420px)
+@media all and (max-width: 720px) and (min-width: 520px)
+  $base-size: 2.2em
+
+  h1
+    font-size: $base-size * 3
+
+  h2
+    font-size: $base-size * 1
+
+  h3
+    font-size: $base-size * 1.2
+    font-weight: 800
+
+  h4
+    font-size: $base-size * 2.25
+
+  h5
+    font-size: $base-size * 1.3
+
+  h6, .registry
+    font-size: $base-size * .9
+
+  p, dl, span
+    font-size: $base-size * .65
+
+  li
+    font-size: $base-size * .74
+
+  .party-male, .party-female
+    li
+      font-size: $base-size * .94
+      padding: 10px 0
+
+  nav
+    ul
+      padding-left: 8px
+    li
+      margin-right: 8px
+
+  .hide-med, .hide-sm
+    display: none
+
+
+@media all and (max-width: 520px)
   $base-size: 2.5em
 
   h1
@@ -592,7 +645,8 @@ q
     background-size: 70% auto
     min-height: 120px
 
-
+  .hide-med, .hide-sm
+    display: none
 
 
 

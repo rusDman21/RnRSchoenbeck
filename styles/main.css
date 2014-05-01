@@ -327,7 +327,10 @@ q {
 .press-light, nav {
   text-shadow: 1px 1px 1px white; }
 
-@media all and (max-width: 1120px) and (min-width: 720px) {
+@media all and (max-width: 1320px) and (min-width: 1120px) {
+  .hide-med {
+    display: none; } }
+@media all and (max-width: 1120px) and (min-width: 920px) {
   h1 {
     font-size: 9em; }
 
@@ -356,38 +359,81 @@ q {
   nav ul {
     padding-left: 15px; }
   nav li {
-    margin-right: 15px; } }
-@media all and (max-width: 720px) and (min-width: 420px) {
+    margin-right: 15px; }
+
+  .hide-med {
+    display: none; } }
+@media all and (max-width: 920px) and (min-width: 720px) {
   h1 {
-    font-size: 6.45em; }
+    font-size: 9em; }
 
   h2 {
-    font-size: 2.15em; }
+    font-size: 3em; }
 
   h3 {
-    font-size: 2.15em;
+    font-size: 3em;
     font-weight: 800; }
 
   h4 {
-    font-size: 4.8375em; }
+    font-size: 6.75em; }
 
   h5 {
-    font-size: 2.795em; }
+    font-size: 3.9em; }
 
   h6, .registry {
-    font-size: 1.935em; }
+    font-size: 2.7em; }
 
   p, dl, span {
-    font-size: 1.3975em; }
+    font-size: 1.95em; }
 
   li {
-    font-size: 1.505em; }
+    font-size: 2.1em; }
 
   nav ul {
-    padding-left: 10px; }
+    padding-left: 15px; }
   nav li {
-    margin-right: 10px; } }
-@media all and (max-width: 420px) {
+    margin-right: 15px; }
+
+  .hide-med, .hide-sm {
+    display: none; } }
+@media all and (max-width: 720px) and (min-width: 520px) {
+  h1 {
+    font-size: 6.6em; }
+
+  h2 {
+    font-size: 2.2em; }
+
+  h3 {
+    font-size: 2.64em;
+    font-weight: 800; }
+
+  h4 {
+    font-size: 4.95em; }
+
+  h5 {
+    font-size: 2.86em; }
+
+  h6, .registry {
+    font-size: 1.98em; }
+
+  p, dl, span {
+    font-size: 1.43em; }
+
+  li {
+    font-size: 1.628em; }
+
+  .party-male li, .party-female li {
+    font-size: 2.068em;
+    padding: 10px 0; }
+
+  nav ul {
+    padding-left: 8px; }
+  nav li {
+    margin-right: 8px; }
+
+  .hide-med, .hide-sm {
+    display: none; } }
+@media all and (max-width: 520px) {
   h1 {
     font-size: 5em;
     margin: 0 0 -10px;
@@ -453,4 +499,7 @@ q {
 
   footer {
     background-size: 70% auto;
-    min-height: 120px; } }
+    min-height: 120px; }
+
+  .hide-med, .hide-sm {
+    display: none; } }
