@@ -320,7 +320,6 @@ a
   // Address `outline` inconsistency between Chrome and other browsers.
   &:focus
     outline: thin dotted
-    color: lighten($blue, 40%)
     color: fade-out($blue, .6)
 
   // Improve readability when focused and also mouse hovered in all browsers.
@@ -328,11 +327,10 @@ a
     outline: 0
 
   &:active
-    color: fade-out(lighten($blue, 30%), .5)
+    color: fade-out($red, .5)
 
   &:hover
-    color: fade-out(lighten($blue, 20%), .4)
-
+    color: $red
 
 // ~~~~~~~~~~LISTS~~~~~~~~~~
 
@@ -448,6 +446,10 @@ q
 
 .press-light, nav
   text-shadow: $press-lt
+
+.underline
+  border-bottom: 1px dotted $red
+  padding-bottom: 4px
 
 
 // ~~~~~~~~~~MEDIA QUERIES~~~~~~~~~~
