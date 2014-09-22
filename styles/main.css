@@ -234,10 +234,10 @@ ul, ol, dl {
   padding: 0;
   margin: 0; }
 
-dt, .justify {
+dl, dt, .justify {
   text-align: justify; }
 
-dl, .left {
+.left {
   text-align: left; }
 
 .option dt {
@@ -332,6 +332,9 @@ q {
 .underline {
   border-bottom: 1px dotted #5a0014;
   padding-bottom: 4px; }
+
+.text-center {
+  text-align: center; }
 
 @media all and (max-width: 1320px) and (min-width: 1120px) {
   .hide-med {
