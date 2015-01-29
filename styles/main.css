@@ -82,6 +82,12 @@ span {
   float: left;
   width: 33.33333%; }
 
+.recommend {
+  margin: 4% 0 8%; }
+
+.elevation {
+  margin-left: 10%; }
+
 nav {
   width: 100%;
   background-color: white;
