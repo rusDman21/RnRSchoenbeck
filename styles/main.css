@@ -161,8 +161,8 @@ svg:not(:root) {
 
 .slides {
   padding: 0;
-  width: 609px;
-  height: 420px;
+  width: 800px;
+  height: 532.33083px;
   display: block;
   margin: 0 auto;
   position: relative; }
@@ -184,8 +184,8 @@ svg:not(:root) {
 .slide {
   top: 0;
   opacity: 0;
-  width: 609px;
-  height: 420px;
+  width: 100%;
+  height: 100%;
   display: block;
   position: absolute;
   transform: scale(0);
@@ -196,7 +196,7 @@ svg:not(:root) {
   height: 100%; }
 
 .nav label {
-  width: 200px;
+  width: 12%;
   height: 100%;
   display: none;
   position: absolute;
@@ -207,7 +207,7 @@ svg:not(:root) {
   color: white;
   font-size: 156pt;
   text-align: center;
-  line-height: 380px;
+  line-height: 532.33083px;
   font-family: "Varela Round", sans-serif;
   background-color: rgba(255, 255, 255, 0.3);
   text-shadow: 0px 0px 15px #777777; }
@@ -228,28 +228,6 @@ input:checked + .slide-container .slide {
 
 input:checked + .slide-container .nav label {
   display: block; }
-
-.nav-dots {
-  width: 100%;
-  bottom: 9px;
-  height: 11px;
-  display: block;
-  position: absolute;
-  text-align: center; }
-
-.nav-dots .nav-dot {
-  top: -5px;
-  width: 11px;
-  height: 11px;
-  margin: 0 4px;
-  position: relative;
-  border-radius: 100%;
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.6); }
-
-.nav-dots .nav-dot:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.8); }
 
 input#img-1:checked ~ .nav-dots label#img-dot-1,
 input#img-2:checked ~ .nav-dots label#img-dot-2,
@@ -446,6 +424,15 @@ q {
   .hide-med {
     display: none; } }
 @media all and (max-width: 1120px) and (min-width: 920px) {
+  .slides {
+    width: 720px;
+    height: 479.09774px; }
+
+  .nav label {
+    width: 12%;
+    font-size: 156pt;
+    line-height: 479.09774px; }
+
   h1 {
     font-size: 9em; }
 
@@ -479,6 +466,15 @@ q {
   .hide-med {
     display: none; } }
 @media all and (max-width: 920px) and (min-width: 720px) {
+  .slides {
+    width: 600px;
+    height: 399.24812px; }
+
+  .nav label {
+    width: 12%;
+    font-size: 126pt;
+    line-height: 399.24812px; }
+
   h1 {
     font-size: 9em; }
 
@@ -512,6 +508,15 @@ q {
   .hide-med, .hide-sm {
     display: none; } }
 @media all and (max-width: 720px) and (min-width: 520px) {
+  .slides {
+    width: 430px;
+    height: 286.12782px; }
+
+  .nav label {
+    width: 12%;
+    font-size: 106pt;
+    line-height: 286.12782px; }
+
   h1 {
     font-size: 6.6em; }
 
@@ -549,6 +554,15 @@ q {
   .hide-med, .hide-sm {
     display: none; } }
 @media all and (max-width: 520px) {
+  .slides {
+    width: 320px;
+    height: 212.93233px; }
+
+  .nav label {
+    width: 12%;
+    font-size: 76pt;
+    line-height: 212.93233px; }
+
   h1 {
     font-size: 5em;
     margin: 0 0 -10px;
